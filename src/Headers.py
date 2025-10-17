@@ -15,8 +15,20 @@ def save_grade():
     while save_data not in ['S', 'N']:
         print("Salvar ? S/N")
         save_data = input("Selecione: ").upper()
-        if platform.system() == "Windows":
-            os.system('cls')
-        else:
-            os.system('clear') #mac e linux
+        clear_menu()
+
+def main_menu():
+    clear_menu()
+    print('='*20)
+    print('1 - Novo usuario')
+    print('2 - Login')
+    print('3 - Exibir notas')
+    print('0 - Finalizar programa')
+    print('='*20)
+
+def clear_menu():
+    if platform.system() == "Windows":
+        os.system('cls')
+    else:
+        os.system('clear') 
 

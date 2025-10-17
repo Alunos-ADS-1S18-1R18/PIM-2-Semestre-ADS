@@ -1,0 +1,3 @@
+17/10/25 as 04:04:15 -> Login: joao
+17/10/25 as 04:05:08 -> Login: pedro
+17/10/25 as 04:05:20 -> Login: joao

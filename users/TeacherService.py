@@ -8,15 +8,15 @@
 4-Novo aluno
 
 '''
-import Hearders
+import Headers
 
-from src.LoginService import geraLog
+from users.LoginService import geraLog
 
 
 while True:
     teacher_choice = None
 
-    Hearders.teacher_menu()
+    Headers.teacher_menu()
     try:
         teacher_choice = int(input("Digite a opcao desejada: "))
     except ValueError:

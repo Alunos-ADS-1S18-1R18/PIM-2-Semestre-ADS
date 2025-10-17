@@ -1,5 +1,6 @@
 import random
 import string
+from src import FileService
 
 def verificar_codigo(codigo):
     # Etapa 1: Somar os valores ASCII dos caracteres
@@ -30,10 +31,20 @@ def gerar_codigo_valido():
         if verificar_codigo(codigo):
             return codigo
 
-# Teste
-codigo_valido = gerar_codigo_valido()
-print("Código válido gerado:", codigo_valido)
+
+def register():
+    users = FileService.FileService.load_users()
+    username = input("Nome: ")
+    if username in users:
+        print("⚠️ Usuario ja existe.")
+        return
+    password = input("Senha: ")
+    FileService.FileService.save_user(username, password)
+    print("✅ Usuario registrado com sucesso!")
 
 
+
+"""codigo_valido = gerar_codigo_valido()
+print("Código válido gerado:", codigo_valido)"""
 
 
