@@ -8,10 +8,9 @@
 4-Novo aluno
 
 '''
-import Headers
-
+from src import Headers, FileService
 from users.LoginService import geraLog
-
+MATERIAS_JSON = "materias.json"
 
 while True:
     teacher_choice = None
@@ -38,3 +37,23 @@ while True:
         print(f"\nNenhuma opcao corresponde com {teacher_choice}\n")
    
 
+def edit_grades(subject, teacher_login, student_name, new_grade):
+    json_load = FileService.FileService.json_load(MATERIAS_JSON)
+
+    #verifica se o professor tem permissao.
+    if json_load[subject]["professor"] != teacher_login:
+        raise PermissionError("Acesso negado! Voce não pode editar essa máteria.")
+
+    #Atualiza a nota do aluno
+    for student in json_load[subject]["aluno"]:
+        if student["nome"] == student_name:
+            student["nota"] = new_grade
+            break
+    else:
+        raise ValueError("Aluno nao foi encontrado")
+
+    #Salva as alteracoes
+    FileService.FileService.write_json(MATERIAS_JSON, json_load)
+
+
+def add_student():

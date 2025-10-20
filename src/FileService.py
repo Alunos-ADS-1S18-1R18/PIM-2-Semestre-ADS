@@ -10,15 +10,15 @@ class FileService:
 
 
     @staticmethod
-    def open_json():
+    def json_load(JSON_FILE):
         """Abre o JSON, cria um novo se não existir, e retorna o dicionário."""
-        if not os.path.exists(FileService.GRADE_FILE):
+        if not os.path.exists(FileService.JSON_FILE):
             print('Arquivo não encontrado, criando um novo...')
             data = {}
             FileService.write_json(data)
             return data
 
-        with open(FileService.GRADE_FILE, 'r', encoding='utf-8') as file:
+        with open(FileService.JSON_FILE, 'r', encoding='utf-8') as file:
             try:
                 data = json.load(file)
             except json.JSONDecodeError:
@@ -28,7 +28,7 @@ class FileService:
         return data
 
     @staticmethod
-    def write_json(data):
+    def write_json(data=dict):
         """Grava o dicionário completo no arquivo JSON."""
         with open(FileService.GRADE_FILE, 'w', encoding='utf-8') as file:
             json.dump(data, file, ensure_ascii=False, indent=4)

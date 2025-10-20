@@ -43,6 +43,9 @@ def register():
     print("✅ Usuario registrado com sucesso!")
 
 
+#
+def new_student():
+    
 
 """codigo_valido = gerar_codigo_valido()
 print("Código válido gerado:", codigo_valido)"""
