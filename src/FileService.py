@@ -4,21 +4,21 @@ from users import LoginService
 
 
 class FileService:
-    GRADE_FILE = 'materias.json'
+    GRADE_FILE = "materias.json"
     USER_FILE = "users.txt"
 
 
 
     @staticmethod
-    def json_load(JSON_FILE):
+    def json_load():
         """Abre o JSON, cria um novo se não existir, e retorna o dicionário."""
-        if not os.path.exists(FileService.JSON_FILE):
+        if not os.path.exists(FileService.GRADE_FILE):
             print('Arquivo não encontrado, criando um novo...')
             data = {}
             FileService.write_json(data)
             return data
 
-        with open(FileService.JSON_FILE, 'r', encoding='utf-8') as file:
+        with open(FileService.GRADE_FILE, 'r', encoding='utf-8') as file:
             try:
                 data = json.load(file)
             except json.JSONDecodeError:
@@ -28,34 +28,10 @@ class FileService:
         return data
 
     @staticmethod
-    def write_json(data=dict):
+    def write_json(data):
         """Grava o dicionário completo no arquivo JSON."""
         with open(FileService.GRADE_FILE, 'w', encoding='utf-8') as file:
             json.dump(data, file, ensure_ascii=False, indent=4)
-
-
-    #trocar o locar da funcao.
-    @staticmethod
-    def add_subject(subject_name):
-        """Adiciona uma nova matéria se ela ainda não existir."""
-        data = FileService.open_json()
-        if subject_name not in data:
-            data[subject_name] = []
-            FileService.write_json(data)
-            print(f"Matéria '{subject_name}' criada com sucesso!")
-        else:
-            print(f"Matéria '{subject_name}' já existe.")
-
-    @staticmethod
-    def add_student(subject_name, ra, nota, media):
-        """Adiciona um aluno a uma matéria existente."""
-        data = FileService.open_json()
-        # adiciona o aluno
-        aluno = {"RA": ra, "Nota": nota, "Média": media}
-        data[subject_name].append(aluno)
-
-        FileService.write_json(data)
-        print(f"Aluno RA {ra} adicionado à matéria '{subject_name}' com sucesso!")
 
     @staticmethod
     def load_users():
@@ -64,8 +40,12 @@ class FileService:
         try:
             with open(FileService.USER_FILE, 'r') as file:
                 for line in file:
-                    username, stored_hash = line.strip().split(":")
-                    users[username] = stored_hash
+                    line = line.strip()
+                    if ":" in line:
+                        parts = line.split(":")
+                        if len(parts) == 2:
+                            username, stored_hash = parts
+                            users[username] = stored_hash
         except FileNotFoundError:
             pass
         return users
@@ -96,3 +76,18 @@ FileService.add_subject("História")
 
 print(json.dumps(FileService.open_json(), indent=4, ensure_ascii=False))
 """
+def set_teacher(subject, teacher_name):
+    data = FileService.json_load(FileService.GRADE_FILE)
+
+    if subject in data:
+        data[subject]["Professor"] = teacher_name
+
+    else:
+        data[subject] = {
+            "Professor": teacher_name,
+            "Alunos": []
+        }
+    FileService.write_json()
+    print(f"Professor {teacher_name} atribuido a materia {subject}")
+
+#set_teacher("Biologia", "Pedro Joao")

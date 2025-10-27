@@ -3,6 +3,7 @@ from src import FileService
 import os.path
 import time
 import hashlib
+from users import Admin
 
 class LoginSevice:
     LOG_FILE = 'log.txt'
@@ -26,18 +27,37 @@ class LoginSevice:
 
         arquivo.close()
 
+    @staticmethod
+    def permission_verification(username, password):
+        users = FileService.FileService.load_users()
+        if username == "ADMIN" and username in users and users[username] == password:
+            print("✅ Login administrador autorizado!")
+            LoginSevice.geraLog(f"Login ADMIN: {username}", LoginSevice.LOG_FILE)
+            return True
+        else:
+            return False
 
     @staticmethod
     def login():
 
         users = FileService.FileService.load_users()
 
-        username = input("Nome: ")
+        username = input("Nome: ").upper().strip(" ")
         password = input("Senha: ")
 
         hashed_input = LoginSevice.hash_password(password)
-        if username in users and users[username] == hashed_input:
-            print("✅ Login autorizado!")
-            LoginSevice.geraLog(f"Login: {username}", LoginSevice.LOG_FILE)
+        #verificacao de login admin
+        admin_permission = LoginSevice.permission_verification(username, hashed_input)
+        
+        if admin_permission == True:
+            time.sleep(1)
+            Admin.menu()   
         else:
-            print("❌ Nome de usuario ou senha invalidos.")
+            #verificacao de login professor
+   
+            if username in users and users[username] == hashed_input:
+                print("✅ Login autorizado!")
+                LoginSevice.geraLog(f"Login: {username}", LoginSevice.LOG_FILE)
+            else:
+                print("❌ Nome de usuario ou senha invalidos.")
+        

@@ -14,8 +14,11 @@ def load_users():
     try:
         with open(USER_FILE, "r") as file:
             for line in file:
-                username, stored_hash = line.strip().split(":")
-                users[username] = stored_hash
+                parts = line.strip().split(":")
+                if len(parts) == 2:
+                    username, stored_hash = parts
+                    users[username] = stored_hash
+
     except FileNotFoundError:
         pass
     return users
@@ -51,3 +54,5 @@ def login():
 
 register()
 login()
+
+#TODO verificacao de arquivo vazio

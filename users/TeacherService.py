@@ -38,7 +38,7 @@ while True:
    
 
 def edit_grades(subject, teacher_login, student_name, new_grade):
-    json_load = FileService.FileService.json_load(MATERIAS_JSON)
+    json_load = FileService.FileService.json_load()
 
     #verifica se o professor tem permissao.
     if json_load[subject]["professor"] != teacher_login:
@@ -56,4 +56,3 @@ def edit_grades(subject, teacher_login, student_name, new_grade):
     FileService.FileService.write_json(MATERIAS_JSON, json_load)
 
 
-def add_student():
