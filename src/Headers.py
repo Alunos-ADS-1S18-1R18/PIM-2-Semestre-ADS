@@ -50,3 +50,15 @@ def subject_names():
         except ValueError:
             print("❌ Entrada invalida. Digite um numero.")
     
+def request_continue():
+    
+    while True:
+        print("Continuar inserindo alunos?[1-SIM/0-NAO]")
+        try:
+            option = int(input("Selecione uma opcao: "))
+            while option not in [1, 0]:
+                return option
+        except ValueError:
+            print("❌ Valor digitado invalido")
+
+        return option

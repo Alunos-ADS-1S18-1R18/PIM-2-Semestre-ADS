@@ -9,6 +9,7 @@ import json
 USER_LOG = "userLog.json"
 MATERIAS_JSON = "materias.json"
 
+
 def set_teacher(subject, teacher_name):
     #Define um novo professor na materia
     data = FileService.FileService.json_load()
@@ -110,38 +111,32 @@ def register_new_user():
         set_user_data(username, teacher_name, subject_selected)
         
 
-def add_subject(subject_name):
-    """Adiciona uma nova matéria se ela ainda não existir."""
-    data = FileService.json_load()
-    if subject_name not in data:
-        data[subject_name] = []
-        FileService.write_json(data)
-        print(f"Matéria '{subject_name}' criada com sucesso!")
-    else:
-        print(f"Matéria '{subject_name}' já existe.")
-
-
-def add_student(subject_name, ra, nota=None, media=None):
-    """Adiciona um aluno a uma matéria existente."""
-    data = FileService.FileService.json_load()
-    # adiciona o aluno
-    aluno = {"RA": ra, "Nota": nota, "Média": media}
-    data[subject_name].append(aluno)
-
-    FileService.FileService.write_json(data)
-    print(f"Aluno RA {ra} adicionado à matéria '{subject_name}' com sucesso!")
-
-
-def new_student(student_name, grade, student_class):
+def new_student():
     json_load = FileService.FileService.json_load()
+    while True:
+        print("="*25)                      
+        student_name = input("Nome do Aluno: ").strip()
+        student_class = input("Turma do Aluno: ").strip()
+        print("="*25)
+        if not student_name or not student_class:
+            print("⚠️ Nome e Turma não podem estar vazios. Tente novamente.")
+            continue
+        else:
+            new_student = {
+                "Nome": student_name,
+                "Turma": student_class, 
+                "Nota": [0,0,0,0],
+                "RA": generete_aluno_code()
+                }
+            for subject in json_load:
+                json_load[subject]["Alunos"].append(new_student)
+            
+            request_continue = Headers.request_continue()
 
-    new_student = {"Nome": student_name,"Turma": student_class, "Nota": grade, "RA": generete_aluno_code()}
+            if request_continue == 0:
+                break
 
-    for subject in json_load:
-        json_load[subject]["Alunos"].append(new_student)
-
-        FileService.FileService.write_json(json_load)
-
+    FileService.FileService.write_json(json_load)
     print(f"Aluno {student_name} adicionado a todas as materias com sucesso!")
 
 
@@ -157,7 +152,6 @@ def menu():
             continue
         match option:
             case 1:
-                #TODO trazer/fazer funcoes relacionada com prefessor
                
                 print("="*25)
                 print("   Criar novo usuario\n")
@@ -165,20 +159,11 @@ def menu():
                 time.sleep(2)
                 Headers.clear_menu()
                 print()
-                #editar professor   
+               
+                  
             case 2:
-                while True:
-                    try:
-                        print("="*25)
-                        student_name = str(input("Nome do Aluno: "))
-                        student_class = str(input("Turma do Aluno: "))
-                        print("="*25)
-                    except ValueError:
-                        print("Nome ou Turma invalido!")
-                        return
-                    new_student(student_name, None, student_class)
-                #TODO trazer/fazer funcoes relacionada com aluno
-                
+                new_student()
+                 
             case 0:
                 break
             case _:

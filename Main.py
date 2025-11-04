@@ -20,9 +20,6 @@ while True:
             system.login()
             time.sleep(1.5)
             Headers.clear_menu()
-        case 2:
-            pass
-            
         case 0:
             print("Encerrando o Programa")
             break

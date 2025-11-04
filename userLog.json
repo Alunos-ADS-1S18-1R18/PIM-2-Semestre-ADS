@@ -1,10 +1,18 @@
 {
-    "SAMUEL": {
-        "teacher": "samuel elias",
-        "subject": "Ingles"
+    "ROBS": {
+        "teacher": "roberto",
+        "subject": "Fisica"
     },
-    "CARIRI": {
-        "teacher": "cariani",
-        "subject": "Quimica"
+    "SAMU": {
+        "teacher": "samuel",
+        "subject": "Matemática"
+    },
+    "JOAO": {
+        "teacher": "joao",
+        "subject": "Biologia"
+    },
+    "VICTOR": {
+        "teacher": "victor jesus",
+        "subject": "Portugues"
     }
 }

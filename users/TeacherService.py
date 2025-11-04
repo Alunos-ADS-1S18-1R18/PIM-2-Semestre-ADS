@@ -4,7 +4,7 @@ import json
 from src import Headers
 from src import FileService
 from users import LoginService
-
+import time
 
 USER_LOG = "userLog.json"
 MATERIAS_JSON = "materias.json"
@@ -22,26 +22,46 @@ def menu(username):
 
         match teacher_choice:
             case 1:
-                try:
-                    student_RA = str(input("Digite o RA do aluno: "))
-                except ValueError:
-                    print("❌ Valor inserido invalido, favor digitar novamente")
-                try:
-                    new_grade = float(input("Nota do aluno: "))
-                except ValueError:
-                    print("❌ Valor inserido invalido, favor digitar novamente")
-                get_subject = get_subject_userLog(username)
+                #TODO inserir 4 notas referente a cada bimestre.
+                #new_grade = None
+                student_RA = ""
+                while not student_RA:
+                    student_RA = input("Digite o RA do aluno: ").strip()
+                    if not student_RA:
+                        print("❌ O RA não pode estar em branco. Tente novamente.")              
+                subject = get_subject_userLog(username)
                 user = get_name_userLog(username)
-                edit_grades(get_subject, user, student_RA, new_grade)
-                Headers.clear_menu()
+                show_grades_by_studentRA(subject,user,student_RA)
+                #TODO confirmar aluno
+                #TODO qual bimestre
+                #TODO acessar o indice da lista
+                #TODO alterar o valor do indice
+                #TODO print
+                #TODO confirmacao
+                #TODO salvar
+                    
+                '''while new_grade is None:
+                    grade_str = input("Nota do aluno: ")
+                    try:                    
+                        new_grade = float(grade_str.replace(',', '.'))
+                        if not (0.0 <= new_grade <= 10.0):
+                            print(f"❌ Nota inválida ({new_grade}). A nota deve estar entre 0 e 10.")
+                            new_grade = None 
+                        
+                    except ValueError:
+                        print("❌ Valor inserido inválido. Digite um número (ex: 7.5).")'''
+
+                #LoginService.System.geraLog(f"Edicao de Notas")
+        
+                
+                #edit_grades(subject, user, student_RA, new_grade)
+                #Headers.clear_menu()
                 
             case 2:
-                #TODO Ver notas dos alunos.
-                pass
-            case 3:
-                #TODO Editar notas dos alunos. 
-                LoginService.System.geraLog(f"Edicao de Notas")
-                pass
+                user = get_name_userLog(username)
+                subject = get_subject_userLog(username)
+                show_grades(subject, user)
+                
             case 0:
                 break
 
@@ -65,7 +85,18 @@ def get_subject_userLog(login_user):
             return data[user]["subject"]
 
             
- 
+def show_grades_by_studentRA(subject, teacher_login, student_RA):
+    json_load = FileService.FileService.json_load()
+
+    if json_load[subject]["Professor"] != teacher_login:
+        raise PermissionError("\n❌ Acesso negado! Voce não pode editar essa máteria.\n")
+    
+    for student in json_load[subject]["Alunos"]:
+        if student["RA"] == student_RA:
+            print("-"*25)
+            for key, values in student.items():
+                print(f"    {key}: {values}")
+            print("-"*25)
 
 def edit_grades(subject, teacher_login, student_RA, new_grade):
     json_load = FileService.FileService.json_load()
@@ -85,3 +116,18 @@ def edit_grades(subject, teacher_login, student_RA, new_grade):
     #Salva as alteracoes
     FileService.FileService.write_json(json_load)
 
+
+def show_grades(subject, teacher_login):
+    json_load = FileService.FileService.json_load()
+
+    if json_load[subject]["Professor"] != teacher_login:
+        raise PermissionError("\n❌ Acesso negado! Voce não pode ver essa máteria.\n")
+    
+    for aluno in json_load[subject]["Alunos"]:  
+        print(f"|  Nome:  {aluno['Nome']}")
+        print(f"|  Turma: {aluno['Turma']}")
+        print(f"|  RA:    {aluno['RA']}")
+        print(f"|  Nota:  {aluno['Nota']}")
+        print("-"*20) 
+
+    print("\n--- Fim do Relatório ---")

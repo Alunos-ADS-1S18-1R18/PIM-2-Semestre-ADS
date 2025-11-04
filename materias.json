@@ -1,97 +1,241 @@
 {
     "Matemática": {
-        "Professor": "1",
+        "Professor": "samuel",
         "Alunos": [
             {
-                "Nome": "pascoal",
-                "Nota": 7,
-                "RA": "EXFKJMJF"
+                "Nome": "Dudu DUelista",
+                "Turma": "1C",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "MELLCIH6"
             },
             {
-                "Nome": "Samuel Elias",
-                "Turma": "1C",
-                "Nota": null,
-                "RA": "XWKWI8XO"
+                "Nome": "samuel elias",
+                "Turma": "1a",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "S78YB8KO"
+            },
+            {
+                "Nome": "victor campanha",
+                "Turma": "1j",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "LCOFL2CX"
+            },
+            {
+                "Nome": "joao sarilho",
+                "Turma": "1c",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "UT7MPT34"
+            },
+            {
+                "Nome": "kleber",
+                "Turma": "1B",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "P0KVK148"
             }
         ]
     },
     "Biologia": {
-        "Professor": "2",
+        "Professor": "joao",
         "Alunos": [
             {
-                "Nome": "pascoal",
-                "Nota": 7,
-                "RA": "EXFKJMJF"
+                "Nome": "Dudu DUelista",
+                "Turma": "1C",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "MELLCIH6"
             },
             {
-                "Nome": "Samuel Elias",
-                "Turma": "1C",
-                "Nota": null,
-                "RA": "XWKWI8XO"
+                "Nome": "samuel elias",
+                "Turma": "1a",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "S78YB8KO"
+            },
+            {
+                "Nome": "victor campanha",
+                "Turma": "1j",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "LCOFL2CX"
+            },
+            {
+                "Nome": "joao sarilho",
+                "Turma": "1c",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "UT7MPT34"
+            },
+            {
+                "Nome": "kleber",
+                "Turma": "1B",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "P0KVK148"
             }
         ]
     },
     "Fisica": {
-        "Professor": "3",
+        "Professor": "roberto",
         "Alunos": [
             {
-                "Nome": "pascoal",
-                "Nota": 7,
-                "RA": "EXFKJMJF"
+                "Nome": "Dudu DUelista",
+                "Turma": "1C",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "MELLCIH6"
             },
             {
-                "Nome": "Samuel Elias",
-                "Turma": "1C",
-                "Nota": null,
-                "RA": "XWKWI8XO"
+                "Nome": "samuel elias",
+                "Turma": "1a",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "S78YB8KO"
+            },
+            {
+                "Nome": "victor campanha",
+                "Turma": "1j",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "LCOFL2CX"
+            },
+            {
+                "Nome": "joao sarilho",
+                "Turma": "1c",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "UT7MPT34"
+            },
+            {
+                "Nome": "kleber",
+                "Turma": "1B",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "P0KVK148"
             }
         ]
     },
-    "Educacao Fisica": {
-        "Professor": "julio balestin",
+    "Portugues": {
+        "Professor": "victor jesus",
         "Alunos": [
             {
-                "Nome": "pascoal",
-                "Nota": 7,
-                "RA": "EXFKJMJF"
+                "Nome": "Dudu DUelista",
+                "Turma": "1C",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "MELLCIH6"
             },
             {
-                "Nome": "Samuel Elias",
-                "Turma": "1C",
-                "Nota": null,
-                "RA": "XWKWI8XO"
-            }
-        ]
-    },
-    "Quimica": {
-        "Professor": "cariani",
-        "Alunos": [
-            {
-                "Nome": "pascoal",
-                "Nota": 7,
-                "RA": "EXFKJMJF"
+                "Nome": "samuel elias",
+                "Turma": "1a",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "S78YB8KO"
             },
             {
-                "Nome": "Samuel Elias",
-                "Turma": "1C",
-                "Nota": 5.0,
-                "RA": "XWKWI8XO"
-            }
-        ]
-    },
-    "Ingles": {
-        "Professor": "samuel elias",
-        "Alunos": [
-            {
-                "Nome": "pascoal",
-                "Nota": 7,
-                "RA": "EXFKJMJF"
+                "Nome": "victor campanha",
+                "Turma": "1j",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "LCOFL2CX"
             },
             {
-                "Nome": "Samuel Elias",
-                "Turma": "1C",
-                "Nota": 1.0,
-                "RA": "XWKWI8XO"
+                "Nome": "joao sarilho",
+                "Turma": "1c",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "UT7MPT34"
+            },
+            {
+                "Nome": "kleber",
+                "Turma": "1B",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "P0KVK148"
             }
         ]
     }
