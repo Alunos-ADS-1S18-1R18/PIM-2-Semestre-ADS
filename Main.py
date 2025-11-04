@@ -1,14 +1,14 @@
 #Arquivo Principal onde o Codigo devera ser Rodado
 from src import Headers
 from users import LoginService
-from users import Admin
-import time
 
+import time
+system = LoginService.System()
 
 user_option = None
 
 while True:
-    
+    Headers.clear_menu()
     Headers.main_menu()
     try:
         user_option = int(input("Opcao: "))
@@ -17,14 +17,15 @@ while True:
         time.sleep(1.5)
     match user_option:
         case 1:
-            LoginService.LoginSevice.login()
+            system.login()
             time.sleep(1.5)
+            Headers.clear_menu()
         case 2:
-            Admin.register_new_user()
+            pass
+            
         case 0:
             print("Encerrando o Programa")
             break
 
 
 
-#TODO adicionar aluno

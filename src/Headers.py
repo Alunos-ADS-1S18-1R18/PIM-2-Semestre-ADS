@@ -2,13 +2,12 @@ import os
 import platform
 
 def teacher_menu():
-    print('='*20)
-    print("1- Inserir notas")
-    print("2- Ver notas")
-    print("3- Editar notas")
-    print("4- Novo aluno")
-    print("0- Sair")
-    print('='*20)
+    print('='*25)
+    print("1 - Inserir notas")
+    print("2 - Ver notas")
+    print("3 - Editar notas")
+    print("0 - Sair")
+    print('='*25)
 
 def save_grade():
     save_data = ''
@@ -19,10 +18,10 @@ def save_grade():
 
 def main_menu():
     clear_menu()
-    print('='*20)
+    print('='*25)
     print('1 - Login')
     print('0 - Finalizar programa')
-    print('='*20)
+    print('='*25)
 
 def clear_menu():
     if platform.system() == "Windows":
@@ -35,17 +34,19 @@ def subject_names():
                  "Portugues", "Ingles", "Filosofia", 
                  "Sociologia", "Quimica", "Geografia", 
                  "Educacao Fisica", "Historia"]
+    print("="*25)
     for index, subject in enumerate(subjects):   
         print(f"[{index}] - {subject}")
 
     while True:
-        try:    
+        try:
+            print("="*25)    
             choice = int(input("Opcao: "))
             if 0 <= choice < len(subjects):
-                print(f"Voce escolheu {subjects[choice]}")
+                print(f"\nVoce escolheu {subjects[choice]}\n")
                 return subjects[choice]
             else:
-                print("Valor invalido. Tente novamente.")
+                print("❌ Valor invalido. Tente novamente.")
         except ValueError:
-            print("Entrada invalida. Digite um numero.")
+            print("❌ Entrada invalida. Digite um numero.")
     

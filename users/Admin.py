@@ -2,19 +2,23 @@ import random
 import string
 from src import FileService
 from src import Headers
+import time
+import os
+import json
 
-
+USER_LOG = "userLog.json"
 MATERIAS_JSON = "materias.json"
+
 def set_teacher(subject, teacher_name):
     #Define um novo professor na materia
     data = FileService.FileService.json_load()
     if subject in data:
         if data[subject]["Professor"] is not None:
-            print(f"Ja existe um professor nesta materia {data[subject]["Professor"]}\n [1]SIM\n [2]NAO ")
+            print(f"Ja existe um professor nesta materia {data[subject]["Professor"]}\n")
             while True:
                 try:
                     print("="*25)
-                    option = int(input("\n\nContinuar?\n[1]SIM\n[2]NAO: "))
+                    option = int(input("\n\nContinuar?\n[1]SIM\n[0]NAO: "))
                 except ValueError:
                     print("Entrada invalida, Por favor inserir um numero.")
                 match option:
@@ -54,18 +58,40 @@ def verificar_codigo(codigo):
     return resultado % 97 == 73
 
 
-def generete_ra():
+def generete_aluno_code():
     while True:
         # Gera uma string aleatória de 8 caracteres (letras e números)
         codigo = ''.join(random.choices(string.ascii_uppercase + string.digits, k=8))
         if verificar_codigo(codigo):
             return codigo
 
+def write_user_log(data):
+    with open(USER_LOG, 'w', encoding='utf-8') as file:
+        json.dump(data, file, ensure_ascii=False, indent=4)
+
+def set_user_data(username, teacher_name, subject):
+    
+    if not os.path.exists(USER_LOG):
+        print('\nArquivo não encontrado, criando um novo...\n')
+        data = {}
+        
+        return data
+        
+    with open(USER_LOG, 'r', encoding='utf-8') as file:
+        try:
+            data = json.load(file)
+        except json.JSONDecodeError:
+            print("\nArquivo vazio ou corrompido, recriando...\n")
+            data = {}
+            write_user_log(data)
+    data[username] = {"teacher": teacher_name, "subject": subject}
+    write_user_log(data)
+    return data[username]
 
 def register_new_user():
     """Registra novo usuario professor"""
     users = FileService.FileService.load_users()
-    username = input("Nome: ").upper().strip(" ")
+    username = input("Usuario: ").upper().strip(" ")
     if username in users:
         print("⚠️ Usuario ja existe.")
         return
@@ -74,12 +100,15 @@ def register_new_user():
             print("❌ O nome de usuario nao pode ser admin")
     else:
         FileService.FileService.save_user(username, password)
-        print("✅ Usuario registrado com sucesso!")
+        print("\n✅ Usuario registrado com sucesso!\n")
         teacher_name = input("Nome do Professor: ")
-        print("Atribuir uma materia para este usuario")
+        print("\nAtribuir uma materia para este usuario")
         subject_selected = Headers.subject_names()
-        
+        print()
         set_teacher(subject_selected, teacher_name)
+        print()
+        set_user_data(username, teacher_name, subject_selected)
+        
 
 def add_subject(subject_name):
     """Adiciona uma nova matéria se ela ainda não existir."""
@@ -103,37 +132,51 @@ def add_student(subject_name, ra, nota=None, media=None):
     print(f"Aluno RA {ra} adicionado à matéria '{subject_name}' com sucesso!")
 
 
-def new_student(student_name, grade):
+def new_student(student_name, grade, student_class):
     json_load = FileService.FileService.json_load()
 
-    new_student = {"Nome": student_name, "Nota": grade, "RA": generete_ra()}
+    new_student = {"Nome": student_name,"Turma": student_class, "Nota": grade, "RA": generete_aluno_code()}
 
     for subject in json_load:
         json_load[subject]["Alunos"].append(new_student)
 
         FileService.FileService.write_json(json_load)
 
-    print(f"Aluno {student_name} adicionado à matéria {subject} com sucesso!")
+    print(f"Aluno {student_name} adicionado a todas as materias com sucesso!")
 
 
 def menu():
     while True:
         print("="*25)
-        print("1 - Area Professor")
-        print("2 - Area Aluno")
-        print("0 = Sair")
+        print("1 - Area Professor\n2 - Area Aluno\n0 = Sair")
+        print("="*25)
         try:
             option = int(input("Digite uma opcao: "))
         except ValueError:
-            print(f"opcao ivalida! favor digitar um valor numerico")
+            print(f"\nopcao ivalida! favor digitar um valor numerico\n")
             continue
         match option:
             case 1:
                 #TODO trazer/fazer funcoes relacionada com prefessor
+               
+                print("="*25)
+                print("   Criar novo usuario\n")
                 register_new_user()
+                time.sleep(2)
+                Headers.clear_menu()
+                print()
                 #editar professor   
             case 2:
-                new_student("Joao Schiavoni", 7)
+                while True:
+                    try:
+                        print("="*25)
+                        student_name = str(input("Nome do Aluno: "))
+                        student_class = str(input("Turma do Aluno: "))
+                        print("="*25)
+                    except ValueError:
+                        print("Nome ou Turma invalido!")
+                        return
+                    new_student(student_name, None, student_class)
                 #TODO trazer/fazer funcoes relacionada com aluno
                 
             case 0:

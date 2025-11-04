@@ -1,0 +1,98 @@
+{
+    "Matemática": {
+        "Professor": "1",
+        "Alunos": [
+            {
+                "Nome": "pascoal",
+                "Nota": 7,
+                "RA": "EXFKJMJF"
+            },
+            {
+                "Nome": "Samuel Elias",
+                "Turma": "1C",
+                "Nota": null,
+                "RA": "XWKWI8XO"
+            }
+        ]
+    },
+    "Biologia": {
+        "Professor": "2",
+        "Alunos": [
+            {
+                "Nome": "pascoal",
+                "Nota": 7,
+                "RA": "EXFKJMJF"
+            },
+            {
+                "Nome": "Samuel Elias",
+                "Turma": "1C",
+                "Nota": null,
+                "RA": "XWKWI8XO"
+            }
+        ]
+    },
+    "Fisica": {
+        "Professor": "3",
+        "Alunos": [
+            {
+                "Nome": "pascoal",
+                "Nota": 7,
+                "RA": "EXFKJMJF"
+            },
+            {
+                "Nome": "Samuel Elias",
+                "Turma": "1C",
+                "Nota": null,
+                "RA": "XWKWI8XO"
+            }
+        ]
+    },
+    "Educacao Fisica": {
+        "Professor": "julio balestin",
+        "Alunos": [
+            {
+                "Nome": "pascoal",
+                "Nota": 7,
+                "RA": "EXFKJMJF"
+            },
+            {
+                "Nome": "Samuel Elias",
+                "Turma": "1C",
+                "Nota": null,
+                "RA": "XWKWI8XO"
+            }
+        ]
+    },
+    "Quimica": {
+        "Professor": "cariani",
+        "Alunos": [
+            {
+                "Nome": "pascoal",
+                "Nota": 7,
+                "RA": "EXFKJMJF"
+            },
+            {
+                "Nome": "Samuel Elias",
+                "Turma": "1C",
+                "Nota": 5.0,
+                "RA": "XWKWI8XO"
+            }
+        ]
+    },
+    "Ingles": {
+        "Professor": "samuel elias",
+        "Alunos": [
+            {
+                "Nome": "pascoal",
+                "Nota": 7,
+                "RA": "EXFKJMJF"
+            },
+            {
+                "Nome": "Samuel Elias",
+                "Turma": "1C",
+                "Nota": 1.0,
+                "RA": "XWKWI8XO"
+            }
+        ]
+    }
+}

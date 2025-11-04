@@ -53,7 +53,7 @@ class FileService:
     @staticmethod
     def save_user(username, password):
         """Salva o nome de usuario e sua senha hash"""
-        hashed = LoginService.LoginSevice.hash_password(password)
+        hashed = LoginService.System.hash_password(password)
         with open(FileService.USER_FILE, "a") as file:
             file.write(f"{username}:{hashed}\n")
             
