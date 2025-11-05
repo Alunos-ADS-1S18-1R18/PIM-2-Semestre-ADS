@@ -5,7 +5,6 @@ def teacher_menu():
     print('='*25)
     print("1 - Inserir notas")
     print("2 - Ver notas")
-    print("3 - Editar notas")
     print("0 - Sair")
     print('='*25)
 
