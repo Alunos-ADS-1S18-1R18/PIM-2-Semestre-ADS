@@ -1,6 +1,8 @@
 import json
 import os
 from users import LoginService
+#TODO conversao do arquivo json para csv aparentemente e melhor para se ler em C
+
 
 
 class FileService:

@@ -54,7 +54,7 @@ def menu(username):
                                     show_student_data_by_studentRA(subject_selected,user,student_RA)
                                 except ValueError:
                                     print("❌ Valor digtido invalido por favor inserir apenas numeros!")
-
+#TODO novo fluxo de insercao de notas: escolher bimestre -> escholheu -> editar nota -> Editou -> Deseja editar a nota de outro bimestre?Sim/Nao -> Sim: escolhe bimestre - Nao: volta pro menu de procurar aluno
                             #TODO acessar o indice da lista
                             #TODO alterar o valor do indice
                             #TODO print

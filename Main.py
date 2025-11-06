@@ -1,4 +1,5 @@
-#Arquivo Principal onde o Codigo devera ser Rodado
+#TODO O programa devera ter cores!
+#TODO Melhorar vizual do Programa!
 from src import Headers
 from users import LoginService
 

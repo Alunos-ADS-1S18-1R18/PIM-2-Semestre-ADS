@@ -1,3 +1,8 @@
+#TODO alunos ja inseridos em outras materias PRECISAM ESTAR EM TODAS MATERIAS ate nas PROXIMAS materias criadas
+#TODO conferir novos logins ver se tudo funciona
+
+
+
 import random
 import string
 from src import FileService
