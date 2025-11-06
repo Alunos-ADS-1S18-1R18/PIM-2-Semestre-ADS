@@ -1,7 +1,3 @@
-#TODO alunos ja inseridos em outras materias PRECISAM ESTAR EM TODAS MATERIAS ate nas PROXIMAS materias criadas
-#TODO conferir novos logins ver se tudo funciona
-
-
 
 import random
 import string
@@ -19,27 +15,33 @@ def set_teacher(subject, teacher_name):
     #Define um novo professor na materia
     data = FileService.FileService.json_load()
     if subject in data:
+        
         if data[subject]["Professor"] is not None:
-            print(f"Ja existe um professor nesta materia {data[subject]["Professor"]}\n")
-            while True:
-                try:
-                    print("="*25)
-                    option = int(input("\n\nContinuar?\n[1]SIM\n[0]NAO: "))
-                except ValueError:
-                    print("Entrada invalida, Por favor inserir um numero.")
-                match option:
-                    case 1:
-                        print(f"O professor {data[subject]["Professor"]} foi substituido por {teacher_name}")
-                        data[subject]["Professor"] = teacher_name
-                        break
-                    case 0:
-                        break
+            if data[subject]["Professor"] is not "":
+                print(f"Ja existe um professor nesta materia {data[subject]["Professor"]}\n")
+                while True:
+                    try:
+                        print("="*25)
+                        option = int(input("\n\nContinuar?\n[1]SIM\n[0]NAO: "))
+                    except ValueError:
+                        print("Entrada invalida, Por favor inserir um numero.")
+                    match option:
+                        case 1:
+                            print(f"O professor {data[subject]["Professor"]} foi substituido por {teacher_name}")
+                            data[subject]["Professor"] = teacher_name
+                            break
+                        case 0:
+                            break
+            else:
+                print(f"O professor {teacher_name} foi adicionado a matéria {subject}")
+                data[subject]["Professor"] = teacher_name
+                
     else:
         data[subject] = {
             "Professor": teacher_name,
             "Alunos": []
         }  
-        print(f"Professor {teacher_name} atribuido a materia {subject}")
+        print(f"Professor {teacher_name} atribuido a matéria {subject}")
     FileService.FileService.write_json(data)
 
 def verificar_codigo(codigo):
@@ -136,7 +138,7 @@ def new_student():
             for subject in json_load:
                 json_load[subject]["Alunos"].append(new_student)
             
-            request_continue = Headers.request_continue()
+            request_continue = Headers.request_continue("Continuar inserindo alunos?[1-SIM/0-NAO]")
 
             if request_continue == 0:
                 break

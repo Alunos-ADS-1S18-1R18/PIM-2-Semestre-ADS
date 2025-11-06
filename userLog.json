@@ -14,5 +14,13 @@
     "VICTOR": {
         "teacher": "victor jesus",
         "subject": "Portugues"
+    },
+    "BIOLOGIA": {
+        "teacher": "testestesteste",
+        "subject": "Biologia"
+    },
+    "TESTESAMU": {
+        "teacher": "testesamu",
+        "subject": "Ingles"
     }
 }

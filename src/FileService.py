@@ -1,6 +1,7 @@
 import json
 import os
 from users import LoginService
+import pandas as pd
 #TODO conversao do arquivo json para csv aparentemente e melhor para se ler em C
 
 
@@ -9,8 +10,15 @@ class FileService:
     GRADE_FILE = "materias.json"
     USER_FILE = "users.txt"
 
+    @staticmethod
+    def convert_json_to_csv(json_path):
+        data = pd.read_json(json_path)
 
+        csv_path = os.path.splitext(json_path)[0] + ".csv"
 
+        data.to_csv(csv_path, index=False)
+    
+        print(f"Arquivo CSV criado em {csv_path}")
     @staticmethod
     def json_load():
         """Abre o JSON, cria um novo se não existir, e retorna o dicionário."""

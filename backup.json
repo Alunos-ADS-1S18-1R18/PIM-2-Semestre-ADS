@@ -240,8 +240,9 @@
         ]
     },
     "Ingles": {
-        "Professor": "",
-        "Alunos": [{
+        "Professor": "testesamu",
+        "Alunos": [
+            {
                 "Nome": "Dudu DUelista",
                 "Turma": "1C",
                 "Nota": [
@@ -279,7 +280,7 @@
                 "Turma": "1c",
                 "Nota": [
                     0,
-                    0,
+                    5.0,
                     0,
                     0
                 ],
@@ -295,11 +296,13 @@
                     0
                 ],
                 "RA": "P0KVK148"
-            }]
+            }
+        ]
     },
     "Filosofia": {
         "Professor": "",
-        "Alunos": [{
+        "Alunos": [
+            {
                 "Nome": "Dudu DUelista",
                 "Turma": "1C",
                 "Nota": [
@@ -353,11 +356,13 @@
                     0
                 ],
                 "RA": "P0KVK148"
-            }]
+            }
+        ]
     },
     "Sociologia": {
         "Professor": "",
-        "Alunos": [{
+        "Alunos": [
+            {
                 "Nome": "Dudu DUelista",
                 "Turma": "1C",
                 "Nota": [
@@ -411,11 +416,13 @@
                     0
                 ],
                 "RA": "P0KVK148"
-            }]
+            }
+        ]
     },
     "Quimica": {
         "Professor": "",
-        "Alunos": [{
+        "Alunos": [
+            {
                 "Nome": "Dudu DUelista",
                 "Turma": "1C",
                 "Nota": [
@@ -469,11 +476,13 @@
                     0
                 ],
                 "RA": "P0KVK148"
-            }]
+            }
+        ]
     },
     "Geografia": {
         "Professor": "",
-        "Alunos": [{
+        "Alunos": [
+            {
                 "Nome": "Dudu DUelista",
                 "Turma": "1C",
                 "Nota": [
@@ -527,11 +536,13 @@
                     0
                 ],
                 "RA": "P0KVK148"
-            }]
+            }
+        ]
     },
     "Educacao Fisica": {
         "Professor": "",
-        "Alunos": [{
+        "Alunos": [
+            {
                 "Nome": "Dudu DUelista",
                 "Turma": "1C",
                 "Nota": [
@@ -585,11 +596,13 @@
                     0
                 ],
                 "RA": "P0KVK148"
-            }]
+            }
+        ]
     },
     "Historia": {
         "Professor": "",
-        "Alunos": [{
+        "Alunos": [
+            {
                 "Nome": "Dudu DUelista",
                 "Turma": "1C",
                 "Nota": [
@@ -643,6 +656,7 @@
                     0
                 ],
                 "RA": "P0KVK148"
-            }]
+            }
+        ]
     }
 }

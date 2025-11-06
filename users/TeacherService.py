@@ -20,73 +20,61 @@ def menu(username):
         except ValueError:
             print("\n\nValor invalido, Favor inserir um valor Valido!\n\n")
 
+
         match teacher_choice:
             case 1:
-                #TODO inserir 4 notas referente a cada bimestre.
-                #new_grade = None
                 student_RA = ""
                 while not student_RA:
+                    try:
+                        request_confirm = Headers.request_continue("Deseja voltar?[1-SIM/0-NAO]")
+                        if request_confirm == 1:
+                            break
+                    except ValueError:
+                        print("❌ O valor nao pode ser vazio")
+                   
                     student_RA = input("Digite o RA do aluno: ").strip()
                     if not student_RA:
-                        print("❌ O RA não pode estar em branco. Tente novamente.")              
+                        print("❌ O RA não pode estar em branco. Tente novamente.")
+                              
                 subject_selected = get_subject_userLog(username)
                 user = get_name_userLog(username)
                 show_student_data_by_studentRA(subject_selected,user,student_RA)
-                #TODO confirmar aluno
                 try:
                     print("1 - Continuar\n" \
-                    "2 - Selecionar outro aluno\n" \
                     "0 - Voltar ao Menu\n")
                     user_request = int(input("\nOpcao: "))
                     match user_request:
                         case 1:
-                            selected_bimester = None
-                            while selected_bimester not in [1, 2, 3, 4]:
+                            
+                            while True:
                                 try:
                                     print("\nDigite o numero correspondente do Bismestre a ser alterado.\n")
-                                    print("Qual bimentre você deseja alterar [1º, 2º, 3º, 4º]?\n\n")
+                                    print("Qual bimestre você deseja alterar [1º, 2º, 3º, 4º]?\n\n")
                                     new_list = request_student_grade(subject_selected,user, student_RA)
                                     print(f"Notas: {new_list}")
                                     selected_bimester = int(input("Bimestre: "))
-                                    new_list[selected_bimester - 1] = float(input("Digite a nova Nota: "))
-                                    print(new_list)
-                                    edit_grades(subject_selected, user, student_RA, new_list)
-                                    show_student_data_by_studentRA(subject_selected,user,student_RA)
+                                    if selected_bimester in [1, 2, 3, 4]:  
+                                        request_grade_str = input("Digite a nova Nota: ").replace(",", ".")
+                                        request_grade = float(request_grade_str)
+                                        new_list[selected_bimester - 1] = request_grade
+                                        print(new_list)
+                                        edit_grades(subject_selected, user, student_RA, new_list)
+                                        show_student_data_by_studentRA(subject_selected,user,student_RA)
+                                        try:
+                                            request_confirm = Headers.request_continue("Deseja editar a nota de outro bimestre?[1-SIM/0-NAO]")
+                                        except ValueError:
+                                            print("❌ O valor nao pode ser vazio")
+                                        if request_confirm == 0:
+                                            break
+                                    else:
+                                        print("❌ Bimestre nao encontrado!")
                                 except ValueError:
                                     print("❌ Valor digtido invalido por favor inserir apenas numeros!")
-#TODO novo fluxo de insercao de notas: escolher bimestre -> escholheu -> editar nota -> Editou -> Deseja editar a nota de outro bimestre?Sim/Nao -> Sim: escolhe bimestre - Nao: volta pro menu de procurar aluno
-                            #TODO acessar o indice da lista
-                            #TODO alterar o valor do indice
-                            #TODO print
-                            #TODO confirmacao
-                            #TODO salvar
-                            pass
-                        case 2:
-                            pass
                         case 0:
                             continue
 
                 except ValueError:
                     print("❌ Valor inserido incorreto! tentar novamente")
-                    
-                
-                    
-                '''while new_grade is None:
-                    grade_str = input("Nota do aluno: ")
-                    try:                    
-                        new_grade = float(grade_str.replace(',', '.'))
-                        if not (0.0 <= new_grade <= 10.0):
-                            print(f"❌ Nota inválida ({new_grade}). A nota deve estar entre 0 e 10.")
-                            new_grade = None 
-                        
-                    except ValueError:
-                        print("❌ Valor inserido inválido. Digite um número (ex: 7.5).")'''
-
-                #LoginService.System.geraLog(f"Edicao de Notas")
-        
-                
-                #edit_grades(subject, user, student_RA, new_grade)
-                #Headers.clear_menu()
                 
             case 2:
                 user = get_name_userLog(username)
