@@ -1,5 +1,5 @@
 {
-    "Matemática": {
+    "Matematica": {
         "Professor": "samuel",
         "Alunos": [
             {
@@ -124,7 +124,7 @@
         "Alunos": [
             {
                 "Nome": "Dudu DUelista",
-                "Turma": "1C",
+                "Turma": "1C",  
                 "Nota": [
                     0,
                     0,
