@@ -3,6 +3,13 @@
 #include <stdlib.h>
 #include <locale.h>
 
+
+#define RESET   "\x1b[0m"
+#define RED     "\x1b[31m"
+#define GREEN   "\x1b[32m"
+#define YELLOW  "\x1b[33m"
+#define CYAN    "\x1b[36m"
+#define BOLD    "\x1b[1m"
 #define MAX_ALUNOS 200
 #define MAX_MATERIAS 50
 
@@ -202,45 +209,72 @@ static void listarMaterias() {
     }
 }
 
+
 /* mostrar matéria por índice */
-static void mostrarMateriaIndex(int idx) {
-    if (idx < 0 || idx >= totalMaterias) { printf("Índice inválido.\n"); return; }
-    Materia *m = &materias[idx];
-    printf("\n===== %s =====\nProfessor: %s\n", m->nome, m->professor[0] ? m->professor : "—");
-    printf("------------------------------------------------------------\n");
-    printf("%-30s %-8s %-12s %-20s\n", "Nome", "Turma", "RA", "Notas (Média/Sit)");
-    printf("------------------------------------------------------------\n");
-    for (int j = 0; j < m->totalAlunos; j++) {
-        Aluno *a = &m->alunos[j];
-        float med = media_aluno(a);
-        printf("%-30s %-8s %-12s %.1f, %.1f, %.1f, %.1f (%.1f/%s)\n",
-               a->nome, a->turma, a->ra,
-               a->notas[0], a->notas[1], a->notas[2], a->notas[3],
-               med, med >= 6.0f ? "APROVADO" : "REPROVADO");
+void mostrarMateria(char *materia) {
+    for (int i = 0; i < totalMaterias; i++) {
+        if (strcmp(materias[i].nome, materia) == 0) {
+
+            printf("\n" BOLD CYAN "=============================================\n" RESET);
+            printf(BOLD "              %s\n" RESET, materias[i].nome);
+            printf("       Professor: %s\n", materias[i].professor);
+            printf(BOLD CYAN "=============================================\n" RESET);
+
+            printf(BOLD "Aluno                     Turma   RA         N1   N2   N3   N4   Média   Situação\n" RESET);
+            printf("--------------------------------------------------------------------------------\n");
+
+            for (int j = 0; j < materias[i].totalAlunos; j++) {
+                Aluno *a = &materias[i].alunos[j];
+                float m = media_aluno(a);
+
+                const char *status = (m >= 6) ? GREEN "✅ APROVADO" RESET : RED "❌ REPROVADO" RESET;
+
+                printf("%-24s %-7s %-9s  %.1f  %.1f  %.1f  %.1f   %.1f   %s\n",
+                    a->nome, a->turma, a->ra,
+                    a->notas[0], a->notas[1], a->notas[2], a->notas[3],
+                    m, status
+                );
+            }
+            return;
+        }
     }
+    printf(RED "Matéria não encontrada.\n" RESET);
 }
 
+
 /* buscar por RA */
-static void buscarPorRA(const char *ra) {
-    printf("\n===== Boletim do RA: %s =====\n", ra);
-    int found = 0;
+void buscarRA(char *ra) {
+
+    printf("\n" BOLD CYAN "================ BOLETIM ==================\n" RESET);
+    printf(BOLD "RA: %s\n" RESET, ra);
+    printf(CYAN "-------------------------------------------" RESET "\n");
+
+    int encontrado = 0;
+
+    printf(BOLD "Matéria               N1   N2   N3   N4   Média   Situação\n" RESET);
+    printf("----------------------------------------------------------\n");
+
     for (int i = 0; i < totalMaterias; i++) {
-        Materia *m = &materias[i];
-        for (int j = 0; j < m->totalAlunos; j++) {
-            Aluno *a = &m->alunos[j];
+        for (int j = 0; j < materias[i].totalAlunos; j++) {
+            Aluno *a = &materias[i].alunos[j];
             if (strcmp(a->ra, ra) == 0) {
-                found = 1;
-                float med = media_aluno(a);
-                printf("\nMatéria: %s (Prof: %s)\n", m->nome, m->professor[0] ? m->professor : "—");
-                printf("Aluno: %s | Turma: %s | RA: %s\n", a->nome, a->turma, a->ra);
-                printf("Notas: %.1f %.1f %.1f %.1f | Média: %.1f | %s\n",
-                       a->notas[0], a->notas[1], a->notas[2], a->notas[3],
-                       med, med >= 6.0f ? "APROVADO" : "REPROVADO");
+                encontrado = 1;
+                float m = media_aluno(a);
+                const char *status = (m >= 6) ? GREEN "✅ APROVADO" RESET : RED "❌ REPROVADO" RESET;
+
+                printf("%-20s %.1f  %.1f  %.1f  %.1f   %.1f   %s\n",
+                    materias[i].nome,
+                    a->notas[0], a->notas[1], a->notas[2], a->notas[3],
+                    m, status
+                );
             }
         }
     }
-    if (!found) printf("Nenhuma ocorrência do RA %s encontrada.\n", ra);
+
+    if (!encontrado)
+        printf(RED "\nRA não encontrado.\n" RESET);
 }
+
 
 /* main */
 int main(void) {
@@ -272,12 +306,16 @@ int main(void) {
                 listarMaterias();
                 printf("Digite o número da matéria: ");
                 if (scanf("%d", &opc) != 1) { scanf("%*s"); printf("Entrada inválida.\n"); break; }
-                mostrarMateriaIndex(opc - 1);
+                if (opc >= 1 && opc <= totalMaterias)
+                    mostrarMateria(materias[opc - 1].nome);
+                else
+                    printf(RED "Número inválido!\n" RESET);
+
                 break;
             case 3:
                 printf("Digite o RA do aluno: ");
                 scanf(" %127s", buf);
-                buscarPorRA(buf);
+                buscarRA(buf);
                 break;
             case 4:
                 printf("Saindo...\n");
