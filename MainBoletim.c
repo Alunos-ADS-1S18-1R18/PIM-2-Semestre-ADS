@@ -290,6 +290,7 @@ int main(void) {
     char buf[128];
 
     while (1) {
+        printf("\n\n======= SMARTCLASS =======\n");
         printf("\n\n===== MENU =====\n");
         printf("1 - Listar matérias\n");
         printf("2 - Visualizar matéria (por número)\n");

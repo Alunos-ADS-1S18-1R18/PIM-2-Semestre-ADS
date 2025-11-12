@@ -18,6 +18,8 @@ def save_grade():
 def main_menu():
     clear_menu()
     print('='*25)
+    print("Bem Vindo ao SmartClass")
+    print('='*25)
     print('1 - Login')
     print('0 - Finalizar programa')
     print('='*25)
