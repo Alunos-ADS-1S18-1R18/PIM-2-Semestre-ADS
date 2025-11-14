@@ -155,7 +155,9 @@ def show_grades(subject, teacher_login):
     if json_load[subject]["Professor"] != teacher_login:
         raise PermissionError("\n❌ Acesso negado! Voce não pode ver essa máteria.\n")
     
-    for aluno in json_load[subject]["Alunos"]:  
+    for aluno in json_load[subject]["Alunos"]: 
+        print()
+        print("-"*20)
         print(f"|  Nome:  {aluno['Nome']}")
         print(f"|  Turma: {aluno['Turma']}")
         print(f"|  RA:    {aluno['RA']}")
