@@ -1,7 +1,7 @@
 import json
 import os
 from users import LoginService
-import pandas as pd
+
 #TODO conversao do arquivo json para csv aparentemente e melhor para se ler em C
 
 
