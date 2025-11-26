@@ -1,7 +1,4 @@
-# users/LoginService.py
 
-
-#Sera incrementado aqui somente funcoes sobre Login.
 from src import FileService
 import os.path
 import time

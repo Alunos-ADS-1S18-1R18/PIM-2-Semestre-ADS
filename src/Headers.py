@@ -2,11 +2,11 @@ import os
 import platform
 
 def teacher_menu():
-    print('='*25)
+    print('='*30)
     print("1 - Inserir notas")
     print("2 - Ver notas")
     print("0 - Sair")
-    print('='*25)
+    print('='*30)
 
 def save_grade():
     save_data = ''
@@ -17,12 +17,12 @@ def save_grade():
 
 def main_menu():
     clear_menu()
-    print('='*25)
+    print('='*30)
     print("Bem Vindo ao SmartClass")
-    print('='*25)
+    print('='*30)
     print('1 - Login')
     print('0 - Finalizar programa')
-    print('='*25)
+    print('='*30)
 
 def clear_menu():
     if platform.system() == "Windows":
@@ -35,13 +35,13 @@ def subject_names():
                  "Portugues", "Ingles", "Filosofia", 
                  "Sociologia", "Quimica", "Geografia", 
                  "Educacao Fisica", "Historia"]
-    print("="*25)
+    print("="*30)
     for index, subject in enumerate(subjects):   
         print(f"[{index}] - {subject}")
 
     while True:
         try:
-            print("="*25)    
+            print("="*30)    
             choice = int(input("Opcao: "))
             if 0 <= choice < len(subjects):
                 print(f"\nVoce escolheu {subjects[choice]}\n")

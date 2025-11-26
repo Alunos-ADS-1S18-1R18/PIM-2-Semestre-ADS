@@ -157,12 +157,12 @@ def show_grades(subject, teacher_login):
     
     for aluno in json_load[subject]["Alunos"]: 
         print()
-        print("-"*20)
+        print("-"*30)
         print(f"|  Nome:  {aluno['Nome']}")
         print(f"|  Turma: {aluno['Turma']}")
         print(f"|  RA:    {aluno['RA']}")
         print(f"|  Nota:  {aluno['Nota']}")
-        print("-"*20) 
+        print("-"*30) 
 
     print("\n--- Fim do Relatório ---")
 
