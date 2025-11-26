@@ -22,5 +22,9 @@
     "TESTESAMU": {
         "teacher": "testesamu",
         "subject": "Ingles"
+    },
+    "PROFESSOR1": {
+        "teacher": "professor",
+        "subject": "Geografia"
     }
 }

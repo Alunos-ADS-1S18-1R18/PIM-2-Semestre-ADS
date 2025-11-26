@@ -1,6 +1,6 @@
 {
     "Matematica": {
-        "Professor": "samuel",
+        "Professor": "SAMUEL E.",
         "Alunos": [
             {
                 "Nome": "Dudu DUelista",
@@ -56,11 +56,44 @@
                     10.0
                 ],
                 "RA": "P0KVK148"
+            },
+            {
+                "Nome": "joao vitor",
+                "Turma": "1b",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "LBSF6HAB"
+            },
+            {
+                "Nome": "brenda",
+                "Turma": "1",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "WAC5MQXS"
+            },
+            {
+                "Nome": "hugo",
+                "Turma": "1b",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "HFR09O7O"
             }
         ]
     },
     "Biologia": {
-        "Professor": "testestesteste",
+        "Professor": "HUMBERTO",
         "Alunos": [
             {
                 "Nome": "Dudu DUelista",
@@ -116,71 +149,44 @@
                     0
                 ],
                 "RA": "P0KVK148"
+            },
+            {
+                "Nome": "joao vitor",
+                "Turma": "1b",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "LBSF6HAB"
+            },
+            {
+                "Nome": "brenda",
+                "Turma": "1",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "WAC5MQXS"
+            },
+            {
+                "Nome": "hugo",
+                "Turma": "1b",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "HFR09O7O"
             }
         ]
     },
     "Fisica": {
-        "Professor": "roberto",
-        "Alunos": [
-            {
-                "Nome": "Dudu DUelista",
-                "Turma": "1C",  
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "MELLCIH6"
-            },
-            {
-                "Nome": "samuel elias",
-                "Turma": "1a",
-                "Nota": [
-                    7.0,
-                    7.0,
-                    7.0,
-                    7.0
-                ],
-                "RA": "S78YB8KO"
-            },
-            {
-                "Nome": "victor campanha",
-                "Turma": "1j",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LCOFL2CX"
-            },
-            {
-                "Nome": "joao sarilho",
-                "Turma": "1c",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "UT7MPT34"
-            },
-            {
-                "Nome": "kleber",
-                "Turma": "1B",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "P0KVK148"
-            }
-        ]
-    },
-    "Portugues": {
-        "Professor": "victor jesus",
+        "Professor": "ROBERTO",
         "Alunos": [
             {
                 "Nome": "Dudu DUelista",
@@ -236,12 +242,139 @@
                     0
                 ],
                 "RA": "P0KVK148"
+            },
+            {
+                "Nome": "joao vitor",
+                "Turma": "1b",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "LBSF6HAB"
+            },
+            {
+                "Nome": "brenda",
+                "Turma": "1",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "WAC5MQXS"
+            },
+            {
+                "Nome": "hugo",
+                "Turma": "1b",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "HFR09O7O"
+            }
+        ]
+    },
+    "Portugues": {
+        "Professor": "VICTOR JESUS",
+        "Alunos": [
+            {
+                "Nome": "Dudu DUelista",
+                "Turma": "1C",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "MELLCIH6"
+            },
+            {
+                "Nome": "samuel elias",
+                "Turma": "1a",
+                "Nota": [
+                    7.0,
+                    7.0,
+                    7.0,
+                    7.0
+                ],
+                "RA": "S78YB8KO"
+            },
+            {
+                "Nome": "victor campanha",
+                "Turma": "1j",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "LCOFL2CX"
+            },
+            {
+                "Nome": "joao sarilho",
+                "Turma": "1c",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "UT7MPT34"
+            },
+            {
+                "Nome": "kleber",
+                "Turma": "1B",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "P0KVK148"
+            },
+            {
+                "Nome": "joao vitor",
+                "Turma": "1b",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "LBSF6HAB"
+            },
+            {
+                "Nome": "brenda",
+                "Turma": "1",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "WAC5MQXS"
+            },
+            {
+                "Nome": "hugo",
+                "Turma": "1b",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "HFR09O7O"
             }
         ]
     },
     "Ingles": {
         "Professor": "",
-        "Alunos": [{
+        "Alunos": [
+            {
                 "Nome": "Dudu DUelista",
                 "Turma": "1C",
                 "Nota": [
@@ -295,11 +428,46 @@
                     0
                 ],
                 "RA": "P0KVK148"
-            }]
+            },
+            {
+                "Nome": "joao vitor",
+                "Turma": "1b",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "LBSF6HAB"
+            },
+            {
+                "Nome": "brenda",
+                "Turma": "1",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "WAC5MQXS"
+            },
+            {
+                "Nome": "hugo",
+                "Turma": "1b",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "HFR09O7O"
+            }
+        ]
     },
     "Filosofia": {
         "Professor": "",
-        "Alunos": [{
+        "Alunos": [
+            {
                 "Nome": "Dudu DUelista",
                 "Turma": "1C",
                 "Nota": [
@@ -353,11 +521,46 @@
                     0
                 ],
                 "RA": "P0KVK148"
-            }]
+            },
+            {
+                "Nome": "joao vitor",
+                "Turma": "1b",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "LBSF6HAB"
+            },
+            {
+                "Nome": "brenda",
+                "Turma": "1",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "WAC5MQXS"
+            },
+            {
+                "Nome": "hugo",
+                "Turma": "1b",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "HFR09O7O"
+            }
+        ]
     },
     "Sociologia": {
         "Professor": "",
-        "Alunos": [{
+        "Alunos": [
+            {
                 "Nome": "Dudu DUelista",
                 "Turma": "1C",
                 "Nota": [
@@ -411,11 +614,46 @@
                     0
                 ],
                 "RA": "P0KVK148"
-            }]
+            },
+            {
+                "Nome": "joao vitor",
+                "Turma": "1b",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "LBSF6HAB"
+            },
+            {
+                "Nome": "brenda",
+                "Turma": "1",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "WAC5MQXS"
+            },
+            {
+                "Nome": "hugo",
+                "Turma": "1b",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "HFR09O7O"
+            }
+        ]
     },
     "Quimica": {
-        "Professor": "",
-        "Alunos": [{
+        "Professor": "RICARDO",
+        "Alunos": [
+            {
                 "Nome": "Dudu DUelista",
                 "Turma": "1C",
                 "Nota": [
@@ -469,11 +707,46 @@
                     0
                 ],
                 "RA": "P0KVK148"
-            }]
+            },
+            {
+                "Nome": "joao vitor",
+                "Turma": "1b",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "LBSF6HAB"
+            },
+            {
+                "Nome": "brenda",
+                "Turma": "1",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "WAC5MQXS"
+            },
+            {
+                "Nome": "hugo",
+                "Turma": "1b",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "HFR09O7O"
+            }
+        ]
     },
     "Geografia": {
-        "Professor": "",
-        "Alunos": [{
+        "Professor": "DANIELE",
+        "Alunos": [
+            {
                 "Nome": "Dudu DUelista",
                 "Turma": "1C",
                 "Nota": [
@@ -527,11 +800,46 @@
                     0
                 ],
                 "RA": "P0KVK148"
-            }]
+            },
+            {
+                "Nome": "joao vitor",
+                "Turma": "1b",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "LBSF6HAB"
+            },
+            {
+                "Nome": "brenda",
+                "Turma": "1",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "WAC5MQXS"
+            },
+            {
+                "Nome": "hugo",
+                "Turma": "1b",
+                "Nota": [
+                    6.9,
+                    5.0,
+                    0,
+                    0
+                ],
+                "RA": "HFR09O7O"
+            }
+        ]
     },
     "Educacao Fisica": {
         "Professor": "",
-        "Alunos": [{
+        "Alunos": [
+            {
                 "Nome": "Dudu DUelista",
                 "Turma": "1C",
                 "Nota": [
@@ -585,11 +893,46 @@
                     0
                 ],
                 "RA": "P0KVK148"
-            }]
+            },
+            {
+                "Nome": "joao vitor",
+                "Turma": "1b",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "LBSF6HAB"
+            },
+            {
+                "Nome": "brenda",
+                "Turma": "1",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "WAC5MQXS"
+            },
+            {
+                "Nome": "hugo",
+                "Turma": "1b",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "HFR09O7O"
+            }
+        ]
     },
     "Historia": {
         "Professor": "",
-        "Alunos": [{
+        "Alunos": [
+            {
                 "Nome": "Dudu DUelista",
                 "Turma": "1C",
                 "Nota": [
@@ -643,6 +986,40 @@
                     0
                 ],
                 "RA": "P0KVK148"
-            }]
+            },
+            {
+                "Nome": "joao vitor",
+                "Turma": "1b",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "LBSF6HAB"
+            },
+            {
+                "Nome": "brenda",
+                "Turma": "1",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "WAC5MQXS"
+            },
+            {
+                "Nome": "hugo",
+                "Turma": "1b",
+                "Nota": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "RA": "HFR09O7O"
+            }
+        ]
     }
 }

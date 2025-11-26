@@ -94,3 +94,5 @@
 14/11/25 as 00:00:48 -> SAMU - Login
 14/11/25 as 00:01:19 -> SAMU - Login
 14/11/25 as 00:02:09 -> SAMU - Login
+25/11/25 as 21:20:36 -> ADMIN - Login
+25/11/25 as 21:22:51 -> PROFESSOR1 - Login
