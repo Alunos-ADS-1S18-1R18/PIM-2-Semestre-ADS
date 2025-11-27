@@ -63,9 +63,10 @@ Exemplo mínimo de materias.json
 Usuario ADMIN:
 --------------
 Usuario: admin
--
+
 Senha: adminadmin
--
+
+
 
 Criar usuário ADMIN (hash)
 --------------------------
