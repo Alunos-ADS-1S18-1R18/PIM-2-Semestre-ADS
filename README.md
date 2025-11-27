@@ -59,6 +59,13 @@ Exemplo mínimo de materias.json
 }
 ```
 
+
+Usuario ADMIN:
+--------------
+Usuario: admin
+Senha: adminadmin
+
+
 Criar usuário ADMIN (hash)
 --------------------------
 Gere o hash SHA-256 da senha e adicione a linha em users.txt (ex: ADMIN:<hash>).
