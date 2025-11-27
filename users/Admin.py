@@ -122,23 +122,31 @@ def new_student():
     json_load = FileService.FileService.json_load()
     while True:
         print("="*25)                      
-        student_name = input("Nome do Aluno: ").strip()
-        student_class = input("Turma do Aluno: ").strip()
+        student_name = input("Nome do Aluno: ").strip().upper()
+        while True:
+            student_class = input("Turma do Aluno (ex: 1A): ").strip()
+            if (len(student_class) == 2 and 
+                student_class[0].isdigit() and 
+                student_class[1].isupper()):
+                print(f"Turma registrada: {student_class}")
+                break
+            else:
+                print("\nErro: Formato inválido. Tente algo como '1A' ou '3B'.\n")
         print("="*25)
         if not student_name or not student_class:
-            print("⚠️ Nome e Turma não podem estar vazios. Tente novamente.")
+            print("\n⚠️ Nome e Turma não podem estar vazios. Tente novamente.\n")
             continue
         else:
             new_student = {
+                "RA": generete_aluno_code(),
                 "Nome": student_name,
                 "Turma": student_class, 
-                "Nota": [0,0,0,0],
-                "RA": generete_aluno_code()
+                "Nota": [0,0,0,0]    
                 }
             for subject in json_load:
                 json_load[subject]["Alunos"].append(new_student)
             
-            request_continue = Headers.request_continue("Continuar inserindo alunos?[1-SIM/0-NAO]")
+            request_continue = Headers.request_continue("\nContinuar inserindo alunos?[1-SIM/0-NAO]")
 
             if request_continue == 0:
                 break

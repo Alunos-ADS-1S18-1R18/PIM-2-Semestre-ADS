@@ -18,7 +18,7 @@ def save_grade():
 def main_menu():
     clear_menu()
     print('='*30)
-    print("Bem Vindo ao SmartClass")
+    print("Bem-Vindo ao SmartClass")
     print('='*30)
     print('1 - Login')
     print('0 - Finalizar programa')
@@ -56,7 +56,7 @@ def request_continue(text):
     while True:
         print(text)
         try:
-            option = int(input("Selecione uma opcao: "))
+            option = int(input("\nSelecione uma opcao: "))
             if option in [1, 0]:  
                 return option
             print("❌ Valor inválido. Digite 1 ou 0.")

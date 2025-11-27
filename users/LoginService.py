@@ -5,7 +5,7 @@ import time
 import hashlib
 from users import Admin
 from src import Headers
-from users import TeacherService
+
 class System:
     
     LOG_FILE = 'log.txt'
@@ -13,9 +13,6 @@ class System:
     def __init__(self):
         self.username = None
     
-    def get_user(self):
-        return self.username
-
     def geraLog(self, text):
         if not os.path.isfile(System.LOG_FILE) is False:
             pass
@@ -32,7 +29,9 @@ class System:
         '''Cria um endereco hash SHA-256 da senha do usuario'''
         return hashlib.sha256(password.encode()).hexdigest()
     
-
+    def get_username(self):
+        return self.username
+    
     @staticmethod
     def permission_verification(username, password):
         users = FileService.FileService.load_users()
@@ -65,12 +64,16 @@ class System:
         else:
             #verificacao de login professor
             if username in users and users[username] == hashed_input:
+                from users import TeacherService
                 print("\n✅ Login autorizado!\n")
+                time.sleep(1.5)
                 self.username = username
                 self.geraLog("Login")
                 Headers.clear_menu()
-                TeacherService.menu(self.username)
+                TeacherService.teacher_menu(self.username)
+                
             else:
+                time.sleep(1.5)
                 print("\n❌ Nome de usuario ou senha invalidos.\n")
                 Headers.clear_menu()
         

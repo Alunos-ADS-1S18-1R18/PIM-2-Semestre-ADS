@@ -104,4 +104,4 @@ Contribuição
 
 Contato
 -------
-Responsável/Equipe: João Pedro Schiavoni Sarilho — GitHub: https://github.com/Alunos-ADS-UNIP
+Responsável/Equipe: GitHub: https://github.com/Alunos-ADS-UNIP

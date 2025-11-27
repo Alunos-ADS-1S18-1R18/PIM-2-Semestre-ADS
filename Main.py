@@ -13,15 +13,17 @@ while True:
         user_option = int(input("Opcao: "))
     except ValueError:
         print("❌ Entrada invalida, favor digitar um numero")
-        time.sleep(0.5)
+        time.sleep(1.5)
     match user_option:
         case 1:
             system.login()
-            time.sleep(0.5)
+            time.sleep(1.5)
             Headers.clear_menu()
         case 0:
             print("Encerrando o Programa")
             break
+        case _:
+            continue
 
 
 

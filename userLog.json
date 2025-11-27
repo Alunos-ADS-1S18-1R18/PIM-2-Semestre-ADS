@@ -1,30 +1,26 @@
 {
     "ROBS": {
-        "teacher": "roberto",
+        "teacher": "ROBERTO",
         "subject": "Fisica"
     },
     "SAMU": {
-        "teacher": "samuel",
+        "teacher": "SAMUEL E.",
         "subject": "Matematica"
     },
-    "JOAO": {
-        "teacher": "joao",
-        "subject": "Biologia"
-    },
     "VICTOR": {
-        "teacher": "victor jesus",
+        "teacher": "VICTOR JESUS",
         "subject": "Portugues"
     },
     "BIOLOGIA": {
-        "teacher": "testestesteste",
+        "teacher": "HUMBERTO",
         "subject": "Biologia"
     },
-    "TESTESAMU": {
-        "teacher": "testesamu",
-        "subject": "Ingles"
-    },
     "PROFESSOR1": {
-        "teacher": "professor",
+        "teacher": "DANIELE",
         "subject": "Geografia"
+    },
+    "LUIZ": {
+        "teacher": "Luiz",
+        "subject": "Ingles"
     }
 }

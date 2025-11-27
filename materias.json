@@ -3,92 +3,58 @@
         "Professor": "SAMUEL E.",
         "Alunos": [
             {
-                "Nome": "Dudu DUelista",
+                "RA": "MELLCIH6",
+                "Nome": "EDUARDO ALMEIDA",
                 "Turma": "1C",
-                "Nota": [
-                    6.0,
-                    9.0,
-                    10.0,
-                    2.0
-                ],
-                "RA": "MELLCIH6"
+                "Nota": [1.0, 9.0, 10.0, 2.0]
             },
             {
-                "Nome": "samuel elias",
-                "Turma": "1a",
-                "Nota": [
-                    7.0,
-                    7.0,
-                    7.0,
-                    0
-                ],
-                "RA": "S78YB8KO"
+                "RA": "S78YB8KO",
+                "Nome": "GABRIEL COSTA",
+                "Turma": "1A",
+                "Nota": [7.0, 7.0, 7.0, 8.5]
             },
             {
-                "Nome": "victor campanha",
-                "Turma": "1j",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LCOFL2CX"
-            },
-            {
-                "Nome": "joao sarilho",
-                "Turma": "1c",
-                "Nota": [
-                    5.0,
-                    5.0,
-                    0,
-                    0
-                ],
-                "RA": "UT7MPT34"
-            },
-            {
-                "Nome": "kleber",
+                "RA": "LCOFL2CX",
+                "Nome": "VICTOR PEREIRA",
                 "Turma": "1B",
-                "Nota": [
-                    5.5,
-                    20.0,
-                    6.0,
-                    10.0
-                ],
-                "RA": "P0KVK148"
+                "Nota": [4.5, 6.0, 5.5, 7.0]
             },
             {
-                "Nome": "joao vitor",
-                "Turma": "1b",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LBSF6HAB"
+                "RA": "UT7MPT34",
+                "Nome": "JOAO CARVALHO",
+                "Turma": "1C",
+                "Nota": [5.0, 5.0, 6.5, 5.5]
             },
             {
-                "Nome": "brenda",
-                "Turma": "1",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "WAC5MQXS"
+                "RA": "P0KVK148",
+                "Nome": "KLEBER SOUZA",
+                "Turma": "1B",
+                "Nota": [5.5, 10.0, 6.0, 10.0]
             },
             {
-                "Nome": "hugo",
-                "Turma": "1b",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "HFR09O7O"
+                "RA": "LBSF6HAB",
+                "Nome": "FELIPE RODRIGUES",
+                "Turma": "1C",
+                "Nota": [8.0, 7.5, 9.0, 8.5]
+            },
+            {
+                "RA": "WAC5MQXS",
+                "Nome": "BRENDA LIMA",
+                "Turma": "1B",
+                "Nota": [6.0, 5.5, 8.0, 9.5]
+            },
+            {
+                "RA": "HFR09O7O",
+                "Nome": "HUGO MARTINS",
+                "Turma": "1C",
+                "Nota": [4.0, 4.0, 5.5, 6.0]
+            },
+            {
+                "RA": "JLHV46RE",
+                "Nome": "SAMUEL FERREIRA",
+                "Turma": "2A",
+                "Nota": [5.0, 8.0, 7.0, 9.0]
             }
         ]
     },
@@ -96,92 +62,58 @@
         "Professor": "HUMBERTO",
         "Alunos": [
             {
-                "Nome": "Dudu DUelista",
+                "RA": "MELLCIH6",
+                "Nome": "EDUARDO ALMEIDA",
                 "Turma": "1C",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "MELLCIH6"
+                "Nota": [6.5, 7.0, 5.5, 8.0]
             },
             {
-                "Nome": "samuel elias",
-                "Turma": "1a",
-                "Nota": [
-                    7.0,
-                    7.0,
-                    7.0,
-                    7.0
-                ],
-                "RA": "S78YB8KO"
+                "RA": "S78YB8KO",
+                "Nome": "GABRIEL COSTA",
+                "Turma": "1A",
+                "Nota": [7.0, 7.0, 7.0, 7.0]
             },
             {
-                "Nome": "victor campanha",
-                "Turma": "1j",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LCOFL2CX"
-            },
-            {
-                "Nome": "joao sarilho",
-                "Turma": "1c",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "UT7MPT34"
-            },
-            {
-                "Nome": "kleber",
+                "RA": "LCOFL2CX",
+                "Nome": "VICTOR PEREIRA",
                 "Turma": "1B",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "P0KVK148"
+                "Nota": [8.0, 8.5, 9.0, 7.5]
             },
             {
-                "Nome": "joao vitor",
-                "Turma": "1b",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LBSF6HAB"
+                "RA": "UT7MPT34",
+                "Nome": "JOAO CARVALHO",
+                "Turma": "1C",
+                "Nota": [4.0, 5.5, 6.0, 5.0]
             },
             {
-                "Nome": "brenda",
-                "Turma": "1",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "WAC5MQXS"
+                "RA": "P0KVK148",
+                "Nome": "KLEBER SOUZA",
+                "Turma": "1B",
+                "Nota": [9.0, 8.5, 10.0, 9.5]
             },
             {
-                "Nome": "hugo",
-                "Turma": "1b",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "HFR09O7O"
+                "RA": "LBSF6HAB",
+                "Nome": "FELIPE RODRIGUES",
+                "Turma": "1C",
+                "Nota": [6.0, 6.5, 7.0, 6.0]
+            },
+            {
+                "RA": "WAC5MQXS",
+                "Nome": "BRENDA LIMA",
+                "Turma": "1B",
+                "Nota": [7.5, 8.0, 8.5, 9.0]
+            },
+            {
+                "RA": "HFR09O7O",
+                "Nome": "HUGO MARTINS",
+                "Turma": "1C",
+                "Nota": [5.0, 4.5, 6.0, 5.5]
+            },
+            {
+                "RA": "JLHV46RE",
+                "Nome": "SAMUEL FERREIRA",
+                "Turma": "2A",
+                "Nota": [8.5, 9.0, 8.0, 9.5]
             }
         ]
     },
@@ -189,92 +121,58 @@
         "Professor": "ROBERTO",
         "Alunos": [
             {
-                "Nome": "Dudu DUelista",
+                "RA": "MELLCIH6",
+                "Nome": "EDUARDO ALMEIDA",
                 "Turma": "1C",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "MELLCIH6"
+                "Nota": [3.0, 5.0, 4.5, 6.0]
             },
             {
-                "Nome": "samuel elias",
-                "Turma": "1a",
-                "Nota": [
-                    7.0,
-                    7.0,
-                    7.0,
-                    7.0
-                ],
-                "RA": "S78YB8KO"
+                "RA": "S78YB8KO",
+                "Nome": "GABRIEL COSTA",
+                "Turma": "1A",
+                "Nota": [7.0, 7.0, 7.0, 7.0]
             },
             {
-                "Nome": "victor campanha",
-                "Turma": "1j",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LCOFL2CX"
-            },
-            {
-                "Nome": "joao sarilho",
-                "Turma": "1c",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "UT7MPT34"
-            },
-            {
-                "Nome": "kleber",
+                "RA": "LCOFL2CX",
+                "Nome": "VICTOR PEREIRA",
                 "Turma": "1B",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "P0KVK148"
+                "Nota": [6.5, 7.0, 6.0, 7.5]
             },
             {
-                "Nome": "joao vitor",
-                "Turma": "1b",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LBSF6HAB"
+                "RA": "UT7MPT34",
+                "Nome": "JOAO CARVALHO",
+                "Turma": "1C",
+                "Nota": [8.0, 8.5, 7.5, 8.0]
             },
             {
-                "Nome": "brenda",
-                "Turma": "1",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "WAC5MQXS"
+                "RA": "P0KVK148",
+                "Nome": "KLEBER SOUZA",
+                "Turma": "1B",
+                "Nota": [5.5, 6.0, 5.0, 6.5]
             },
             {
-                "Nome": "hugo",
-                "Turma": "1b",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "HFR09O7O"
+                "RA": "LBSF6HAB",
+                "Nome": "FELIPE RODRIGUES",
+                "Turma": "1C",
+                "Nota": [9.0, 9.5, 8.5, 10.0]
+            },
+            {
+                "RA": "WAC5MQXS",
+                "Nome": "BRENDA LIMA",
+                "Turma": "1B",
+                "Nota": [7.0, 6.5, 7.5, 8.0]
+            },
+            {
+                "RA": "HFR09O7O",
+                "Nome": "HUGO MARTINS",
+                "Turma": "1C",
+                "Nota": [4.0, 3.5, 5.0, 4.5]
+            },
+            {
+                "RA": "JLHV46RE",
+                "Nome": "SAMUEL FERREIRA",
+                "Turma": "2A",
+                "Nota": [10.0, 9.0, 9.5, 10.0]
             }
         ]
     },
@@ -282,185 +180,117 @@
         "Professor": "VICTOR JESUS",
         "Alunos": [
             {
-                "Nome": "Dudu DUelista",
+                "RA": "MELLCIH6",
+                "Nome": "EDUARDO ALMEIDA",
                 "Turma": "1C",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "MELLCIH6"
+                "Nota": [8.0, 7.5, 8.5, 9.0]
             },
             {
-                "Nome": "samuel elias",
-                "Turma": "1a",
-                "Nota": [
-                    7.0,
-                    7.0,
-                    7.0,
-                    7.0
-                ],
-                "RA": "S78YB8KO"
+                "RA": "S78YB8KO",
+                "Nome": "GABRIEL COSTA",
+                "Turma": "1A",
+                "Nota": [7.0, 7.0, 7.0, 7.0]
             },
             {
-                "Nome": "victor campanha",
-                "Turma": "1j",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LCOFL2CX"
-            },
-            {
-                "Nome": "joao sarilho",
-                "Turma": "1c",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "UT7MPT34"
-            },
-            {
-                "Nome": "kleber",
+                "RA": "LCOFL2CX",
+                "Nome": "VICTOR PEREIRA",
                 "Turma": "1B",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "P0KVK148"
+                "Nota": [6.0, 5.5, 6.5, 7.0]
             },
             {
-                "Nome": "joao vitor",
-                "Turma": "1b",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LBSF6HAB"
+                "RA": "UT7MPT34",
+                "Nome": "JOAO CARVALHO",
+                "Turma": "1C",
+                "Nota": [9.0, 8.5, 9.5, 10.0]
             },
             {
-                "Nome": "brenda",
-                "Turma": "1",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "WAC5MQXS"
+                "RA": "P0KVK148",
+                "Nome": "KLEBER SOUZA",
+                "Turma": "1B",
+                "Nota": [7.5, 7.0, 8.0, 7.5]
             },
             {
-                "Nome": "hugo",
-                "Turma": "1b",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "HFR09O7O"
+                "RA": "LBSF6HAB",
+                "Nome": "FELIPE RODRIGUES",
+                "Turma": "1C",
+                "Nota": [5.0, 4.5, 5.5, 6.0]
+            },
+            {
+                "RA": "WAC5MQXS",
+                "Nome": "BRENDA LIMA",
+                "Turma": "1B",
+                "Nota": [8.5, 9.0, 8.0, 9.5]
+            },
+            {
+                "RA": "HFR09O7O",
+                "Nome": "HUGO MARTINS",
+                "Turma": "1C",
+                "Nota": [6.5, 6.0, 7.0, 6.5]
+            },
+            {
+                "RA": "JLHV46RE",
+                "Nome": "SAMUEL FERREIRA",
+                "Turma": "2A",
+                "Nota": [9.5, 9.0, 10.0, 9.5]
             }
         ]
     },
     "Ingles": {
-        "Professor": "",
+        "Professor": "Luiz",
         "Alunos": [
             {
-                "Nome": "Dudu DUelista",
+                "RA": "MELLCIH6",
+                "Nome": "EDUARDO ALMEIDA",
                 "Turma": "1C",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "MELLCIH6"
+                "Nota": [5.5, 6.0, 5.0, 6.5]
             },
             {
-                "Nome": "samuel elias",
-                "Turma": "1a",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "S78YB8KO"
+                "RA": "S78YB8KO",
+                "Nome": "GABRIEL COSTA",
+                "Turma": "1A",
+                "Nota": [8.0, 7.5, 8.5, 9.0]
             },
             {
-                "Nome": "victor campanha",
-                "Turma": "1j",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LCOFL2CX"
-            },
-            {
-                "Nome": "joao sarilho",
-                "Turma": "1c",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "UT7MPT34"
-            },
-            {
-                "Nome": "kleber",
+                "RA": "LCOFL2CX",
+                "Nome": "VICTOR PEREIRA",
                 "Turma": "1B",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "P0KVK148"
+                "Nota": [9.0, 8.5, 9.5, 10.0]
             },
             {
-                "Nome": "joao vitor",
-                "Turma": "1b",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LBSF6HAB"
+                "RA": "UT7MPT34",
+                "Nome": "JOAO CARVALHO",
+                "Turma": "1C",
+                "Nota": [4.0, 5.0, 4.5, 5.5]
             },
             {
-                "Nome": "brenda",
-                "Turma": "1",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "WAC5MQXS"
+                "RA": "P0KVK148",
+                "Nome": "KLEBER SOUZA",
+                "Turma": "1B",
+                "Nota": [6.5, 7.0, 6.0, 7.5]
             },
             {
-                "Nome": "hugo",
-                "Turma": "1b",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "HFR09O7O"
+                "RA": "LBSF6HAB",
+                "Nome": "FELIPE RODRIGUES",
+                "Turma": "1C",
+                "Nota": [7.5, 8.0, 7.0, 8.5]
+            },
+            {
+                "RA": "WAC5MQXS",
+                "Nome": "BRENDA LIMA",
+                "Turma": "1B",
+                "Nota": [9.5, 10.0, 9.0, 9.5]
+            },
+            {
+                "RA": "HFR09O7O",
+                "Nome": "HUGO MARTINS",
+                "Turma": "1C",
+                "Nota": [3.0, 4.5, 3.5, 5.0]
+            },
+            {
+                "RA": "JLHV46RE",
+                "Nome": "SAMUEL FERREIRA",
+                "Turma": "2A",
+                "Nota": [8.5, 9.0, 8.0, 9.5]
             }
         ]
     },
@@ -468,92 +298,58 @@
         "Professor": "",
         "Alunos": [
             {
-                "Nome": "Dudu DUelista",
+                "RA": "MELLCIH6",
+                "Nome": "EDUARDO ALMEIDA",
                 "Turma": "1C",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "MELLCIH6"
+                "Nota": [7.0, 7.5, 8.0, 7.0]
             },
             {
-                "Nome": "samuel elias",
-                "Turma": "1a",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "S78YB8KO"
+                "RA": "S78YB8KO",
+                "Nome": "GABRIEL COSTA",
+                "Turma": "1A",
+                "Nota": [6.5, 7.0, 6.0, 7.5]
             },
             {
-                "Nome": "victor campanha",
-                "Turma": "1j",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LCOFL2CX"
-            },
-            {
-                "Nome": "joao sarilho",
-                "Turma": "1c",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "UT7MPT34"
-            },
-            {
-                "Nome": "kleber",
+                "RA": "LCOFL2CX",
+                "Nome": "VICTOR PEREIRA",
                 "Turma": "1B",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "P0KVK148"
+                "Nota": [8.0, 8.5, 7.5, 8.0]
             },
             {
-                "Nome": "joao vitor",
-                "Turma": "1b",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LBSF6HAB"
+                "RA": "UT7MPT34",
+                "Nome": "JOAO CARVALHO",
+                "Turma": "1C",
+                "Nota": [9.0, 9.5, 8.5, 9.0]
             },
             {
-                "Nome": "brenda",
-                "Turma": "1",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "WAC5MQXS"
+                "RA": "P0KVK148",
+                "Nome": "KLEBER SOUZA",
+                "Turma": "1B",
+                "Nota": [5.0, 5.5, 4.5, 6.0]
             },
             {
-                "Nome": "hugo",
-                "Turma": "1b",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "HFR09O7O"
+                "RA": "LBSF6HAB",
+                "Nome": "FELIPE RODRIGUES",
+                "Turma": "1C",
+                "Nota": [7.5, 8.0, 7.0, 8.5]
+            },
+            {
+                "RA": "WAC5MQXS",
+                "Nome": "BRENDA LIMA",
+                "Turma": "1B",
+                "Nota": [6.0, 6.5, 5.5, 7.0]
+            },
+            {
+                "RA": "HFR09O7O",
+                "Nome": "HUGO MARTINS",
+                "Turma": "1C",
+                "Nota": [4.5, 5.0, 4.0, 5.5]
+            },
+            {
+                "RA": "JLHV46RE",
+                "Nome": "SAMUEL FERREIRA",
+                "Turma": "2A",
+                "Nota": [9.5, 10.0, 9.0, 9.5]
             }
         ]
     },
@@ -561,185 +357,117 @@
         "Professor": "",
         "Alunos": [
             {
-                "Nome": "Dudu DUelista",
+                "RA": "MELLCIH6",
+                "Nome": "EDUARDO ALMEIDA",
                 "Turma": "1C",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "MELLCIH6"
+                "Nota": [8.5, 9.0, 8.0, 8.5]
             },
             {
-                "Nome": "samuel elias",
-                "Turma": "1a",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "S78YB8KO"
+                "RA": "S78YB8KO",
+                "Nome": "GABRIEL COSTA",
+                "Turma": "1A",
+                "Nota": [7.5, 8.0, 7.0, 8.5]
             },
             {
-                "Nome": "victor campanha",
-                "Turma": "1j",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LCOFL2CX"
-            },
-            {
-                "Nome": "joao sarilho",
-                "Turma": "1c",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "UT7MPT34"
-            },
-            {
-                "Nome": "kleber",
+                "RA": "LCOFL2CX",
+                "Nome": "VICTOR PEREIRA",
                 "Turma": "1B",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "P0KVK148"
+                "Nota": [6.5, 7.0, 6.0, 7.5]
             },
             {
-                "Nome": "joao vitor",
-                "Turma": "1b",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LBSF6HAB"
+                "RA": "UT7MPT34",
+                "Nome": "JOAO CARVALHO",
+                "Turma": "1C",
+                "Nota": [5.5, 6.0, 5.0, 6.5]
             },
             {
-                "Nome": "brenda",
-                "Turma": "1",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "WAC5MQXS"
+                "RA": "P0KVK148",
+                "Nome": "KLEBER SOUZA",
+                "Turma": "1B",
+                "Nota": [9.0, 9.5, 8.5, 9.0]
             },
             {
-                "Nome": "hugo",
-                "Turma": "1b",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "HFR09O7O"
+                "RA": "LBSF6HAB",
+                "Nome": "FELIPE RODRIGUES",
+                "Turma": "1C",
+                "Nota": [8.0, 8.5, 7.5, 8.0]
+            },
+            {
+                "RA": "WAC5MQXS",
+                "Nome": "BRENDA LIMA",
+                "Turma": "1B",
+                "Nota": [7.0, 7.5, 6.5, 8.0]
+            },
+            {
+                "RA": "HFR09O7O",
+                "Nome": "HUGO MARTINS",
+                "Turma": "1C",
+                "Nota": [4.0, 4.5, 3.5, 5.0]
+            },
+            {
+                "RA": "JLHV46RE",
+                "Nome": "SAMUEL FERREIRA",
+                "Turma": "2A",
+                "Nota": [10.0, 9.5, 10.0, 9.5]
             }
         ]
     },
     "Quimica": {
-        "Professor": "RICARDO",
+        "Professor": "",
         "Alunos": [
             {
-                "Nome": "Dudu DUelista",
+                "RA": "MELLCIH6",
+                "Nome": "EDUARDO ALMEIDA",
                 "Turma": "1C",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "MELLCIH6"
+                "Nota": [6.0, 6.5, 5.5, 7.0]
             },
             {
-                "Nome": "samuel elias",
-                "Turma": "1a",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "S78YB8KO"
+                "RA": "S78YB8KO",
+                "Nome": "GABRIEL COSTA",
+                "Turma": "1A",
+                "Nota": [8.5, 9.0, 8.0, 9.5]
             },
             {
-                "Nome": "victor campanha",
-                "Turma": "1j",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LCOFL2CX"
-            },
-            {
-                "Nome": "joao sarilho",
-                "Turma": "1c",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "UT7MPT34"
-            },
-            {
-                "Nome": "kleber",
+                "RA": "LCOFL2CX",
+                "Nome": "VICTOR PEREIRA",
                 "Turma": "1B",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "P0KVK148"
+                "Nota": [7.0, 7.5, 6.5, 8.0]
             },
             {
-                "Nome": "joao vitor",
-                "Turma": "1b",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LBSF6HAB"
+                "RA": "UT7MPT34",
+                "Nome": "JOAO CARVALHO",
+                "Turma": "1C",
+                "Nota": [5.0, 5.5, 4.5, 6.0]
             },
             {
-                "Nome": "brenda",
-                "Turma": "1",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "WAC5MQXS"
+                "RA": "P0KVK148",
+                "Nome": "KLEBER SOUZA",
+                "Turma": "1B",
+                "Nota": [4.0, 4.5, 3.5, 5.0]
             },
             {
-                "Nome": "hugo",
-                "Turma": "1b",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "HFR09O7O"
+                "RA": "LBSF6HAB",
+                "Nome": "FELIPE RODRIGUES",
+                "Turma": "1C",
+                "Nota": [9.5, 10.0, 9.0, 9.5]
+            },
+            {
+                "RA": "WAC5MQXS",
+                "Nome": "BRENDA LIMA",
+                "Turma": "1B",
+                "Nota": [8.0, 8.5, 7.5, 9.0]
+            },
+            {
+                "RA": "HFR09O7O",
+                "Nome": "HUGO MARTINS",
+                "Turma": "1C",
+                "Nota": [3.5, 4.0, 3.0, 4.5]
+            },
+            {
+                "RA": "JLHV46RE",
+                "Nome": "SAMUEL FERREIRA",
+                "Turma": "2A",
+                "Nota": [7.5, 8.0, 7.0, 8.5]
             }
         ]
     },
@@ -747,92 +475,58 @@
         "Professor": "DANIELE",
         "Alunos": [
             {
-                "Nome": "Dudu DUelista",
+                "RA": "MELLCIH6",
+                "Nome": "EDUARDO ALMEIDA",
                 "Turma": "1C",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "MELLCIH6"
+                "Nota": [7.5, 8.0, 7.0, 8.5]
             },
             {
-                "Nome": "samuel elias",
-                "Turma": "1a",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "S78YB8KO"
+                "RA": "S78YB8KO",
+                "Nome": "GABRIEL COSTA",
+                "Turma": "1A",
+                "Nota": [9.0, 9.5, 8.5, 9.0]
             },
             {
-                "Nome": "victor campanha",
-                "Turma": "1j",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LCOFL2CX"
-            },
-            {
-                "Nome": "joao sarilho",
-                "Turma": "1c",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "UT7MPT34"
-            },
-            {
-                "Nome": "kleber",
+                "RA": "LCOFL2CX",
+                "Nome": "VICTOR PEREIRA",
                 "Turma": "1B",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "P0KVK148"
+                "Nota": [6.0, 6.5, 5.5, 7.0]
             },
             {
-                "Nome": "joao vitor",
-                "Turma": "1b",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LBSF6HAB"
+                "RA": "UT7MPT34",
+                "Nome": "JOAO CARVALHO",
+                "Turma": "1C",
+                "Nota": [5.5, 6.0, 5.0, 6.5]
             },
             {
-                "Nome": "brenda",
-                "Turma": "1",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "WAC5MQXS"
+                "RA": "P0KVK148",
+                "Nome": "KLEBER SOUZA",
+                "Turma": "1B",
+                "Nota": [8.5, 9.0, 8.0, 9.5]
             },
             {
-                "Nome": "hugo",
-                "Turma": "1b",
-                "Nota": [
-                    6.9,
-                    5.0,
-                    0,
-                    0
-                ],
-                "RA": "HFR09O7O"
+                "RA": "LBSF6HAB",
+                "Nome": "FELIPE RODRIGUES",
+                "Turma": "1C",
+                "Nota": [7.0, 7.5, 6.5, 8.0]
+            },
+            {
+                "RA": "WAC5MQXS",
+                "Nome": "BRENDA LIMA",
+                "Turma": "1B",
+                "Nota": [9.5, 10.0, 9.0, 9.5]
+            },
+            {
+                "RA": "HFR09O7O",
+                "Nome": "HUGO MARTINS",
+                "Turma": "1C",
+                "Nota": [6.9, 5.0, 5.5, 6.0]
+            },
+            {
+                "RA": "JLHV46RE",
+                "Nome": "SAMUEL FERREIRA",
+                "Turma": "2A",
+                "Nota": [4.5, 5.0, 4.0, 5.5]
             }
         ]
     },
@@ -840,92 +534,58 @@
         "Professor": "",
         "Alunos": [
             {
-                "Nome": "Dudu DUelista",
+                "RA": "MELLCIH6",
+                "Nome": "EDUARDO ALMEIDA",
                 "Turma": "1C",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "MELLCIH6"
+                "Nota": [10.0, 9.5, 10.0, 9.0]
             },
             {
-                "Nome": "samuel elias",
-                "Turma": "1a",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "S78YB8KO"
+                "RA": "S78YB8KO",
+                "Nome": "GABRIEL COSTA",
+                "Turma": "1A",
+                "Nota": [9.0, 9.0, 8.5, 9.5]
             },
             {
-                "Nome": "victor campanha",
-                "Turma": "1j",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LCOFL2CX"
-            },
-            {
-                "Nome": "joao sarilho",
-                "Turma": "1c",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "UT7MPT34"
-            },
-            {
-                "Nome": "kleber",
+                "RA": "LCOFL2CX",
+                "Nome": "VICTOR PEREIRA",
                 "Turma": "1B",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "P0KVK148"
+                "Nota": [8.0, 8.5, 7.5, 8.0]
             },
             {
-                "Nome": "joao vitor",
-                "Turma": "1b",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LBSF6HAB"
+                "RA": "UT7MPT34",
+                "Nome": "JOAO CARVALHO",
+                "Turma": "1C",
+                "Nota": [7.5, 8.0, 7.0, 8.5]
             },
             {
-                "Nome": "brenda",
-                "Turma": "1",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "WAC5MQXS"
+                "RA": "P0KVK148",
+                "Nome": "KLEBER SOUZA",
+                "Turma": "1B",
+                "Nota": [6.5, 7.0, 6.0, 7.5]
             },
             {
-                "Nome": "hugo",
-                "Turma": "1b",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "HFR09O7O"
+                "RA": "LBSF6HAB",
+                "Nome": "FELIPE RODRIGUES",
+                "Turma": "1C",
+                "Nota": [9.5, 10.0, 9.0, 9.5]
+            },
+            {
+                "RA": "WAC5MQXS",
+                "Nome": "BRENDA LIMA",
+                "Turma": "1B",
+                "Nota": [8.5, 9.0, 8.0, 9.5]
+            },
+            {
+                "RA": "HFR09O7O",
+                "Nome": "HUGO MARTINS",
+                "Turma": "1C",
+                "Nota": [7.0, 7.5, 6.5, 8.0]
+            },
+            {
+                "RA": "JLHV46RE",
+                "Nome": "SAMUEL FERREIRA",
+                "Turma": "2A",
+                "Nota": [9.0, 9.5, 8.5, 9.0]
             }
         ]
     },
@@ -933,92 +593,58 @@
         "Professor": "",
         "Alunos": [
             {
-                "Nome": "Dudu DUelista",
+                "RA": "MELLCIH6",
+                "Nome": "EDUARDO ALMEIDA",
                 "Turma": "1C",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "MELLCIH6"
+                "Nota": [6.0, 6.5, 5.5, 7.0]
             },
             {
-                "Nome": "samuel elias",
-                "Turma": "1a",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "S78YB8KO"
+                "RA": "S78YB8KO",
+                "Nome": "GABRIEL COSTA",
+                "Turma": "1A",
+                "Nota": [8.0, 8.5, 7.5, 9.0]
             },
             {
-                "Nome": "victor campanha",
-                "Turma": "1j",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LCOFL2CX"
-            },
-            {
-                "Nome": "joao sarilho",
-                "Turma": "1c",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "UT7MPT34"
-            },
-            {
-                "Nome": "kleber",
+                "RA": "LCOFL2CX",
+                "Nome": "VICTOR PEREIRA",
                 "Turma": "1B",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "P0KVK148"
+                "Nota": [7.0, 7.5, 6.5, 8.0]
             },
             {
-                "Nome": "joao vitor",
-                "Turma": "1b",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "LBSF6HAB"
+                "RA": "UT7MPT34",
+                "Nome": "JOAO CARVALHO",
+                "Turma": "1C",
+                "Nota": [5.0, 5.5, 4.5, 6.0]
             },
             {
-                "Nome": "brenda",
-                "Turma": "1",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "WAC5MQXS"
+                "RA": "P0KVK148",
+                "Nome": "KLEBER SOUZA",
+                "Turma": "1B",
+                "Nota": [4.5, 5.0, 4.0, 5.5]
             },
             {
-                "Nome": "hugo",
-                "Turma": "1b",
-                "Nota": [
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "RA": "HFR09O7O"
+                "RA": "LBSF6HAB",
+                "Nome": "FELIPE RODRIGUES",
+                "Turma": "1C",
+                "Nota": [6.5, 7.0, 6.0, 7.5]
+            },
+            {
+                "RA": "WAC5MQXS",
+                "Nome": "BRENDA LIMA",
+                "Turma": "1B",
+                "Nota": [9.0, 9.5, 8.5, 9.0]
+            },
+            {
+                "RA": "HFR09O7O",
+                "Nome": "HUGO MARTINS",
+                "Turma": "1C",
+                "Nota": [3.5, 4.0, 3.0, 4.5]
+            },
+            {
+                "RA": "JLHV46RE",
+                "Nome": "SAMUEL FERREIRA",
+                "Turma": "2A",
+                "Nota": [8.5, 9.0, 8.0, 9.5]
             }
         ]
     }
